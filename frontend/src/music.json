@@ -1,0 +1,48 @@
+[
+    
+    {
+      "image": "./pics/newsphotos/sorry.png",
+      "logo": "./pics/logos/sorry.png",
+      "synopsis": "How far do our mistakes define us? 'sorry' explores the ugly aftermath of a broken friendship in a tale told visually. This film features original music made by members of the Filmmaking Club.",
+      "achievement":false,
+      "trailer":false,
+      "movie_link":"https://www.youtube.com/watch?v=aXt-E4D3xng&t=262s"
+    },
+   
+      {
+        "image": "./pics/newsphotos/sheesha.png",
+        "logo": "./pics/logos/sorry.png",
+        "synopsis": "How far do our mistakes define us? 'sorry' explores the ugly aftermath of a broken friendship in a tale told visually. This film features original music made by members of the Filmmaking Club.",
+        "achievement":false,
+        "trailer":false,
+        "movie_link":"https://www.youtube.com/watch?v=aXt-E4D3xng&t=262s"
+      },
+
+      {
+        "image": "./pics/newsphotos/khoyakhoyachand.png",
+        "logo": "./pics/logos/khoyakhoyachand.png",
+        "synopsis": "How far do our mistakes define us? 'sorry' explores the ugly aftermath of a broken friendship in a tale told visually. This film features original music made by members of the Filmmaking Club.",
+        "achievement":false,
+        "trailer":false,
+        "movie_link":"https://www.youtube.com/watch?v=aXt-E4D3xng&t=262s"
+      },
+      {
+        "image": "./pics/newsphotos/zarigang.png",
+        "logo": "./pics/logos/zarigang.png",
+        "synopsis": "How far do our mistakes define us? 'sorry' explores the ugly aftermath of a broken friendship in a tale told visually. This film features original music made by members of the Filmmaking Club.",
+        "achievement":false,
+        "trailer":false,
+        "movie_link":"https://www.youtube.com/watch?v=aXt-E4D3xng&t=262s"
+      }
+      ,
+      {
+        "image": "./pics/newsphotos/tasveere.png",
+        "logo": "./pics/logos/tasveere.png",
+        "synopsis": "How far do our mistakes define us? 'sorry' explores the ugly aftermath of a broken friendship in a tale told visually. This film features original music made by members of the Filmmaking Club.",
+        "achievement":false,
+        "trailer":false,
+        "movie_link":"https://www.youtube.com/watch?v=aXt-E4D3xng&t=262s"
+      }
+     
+  ]
+  

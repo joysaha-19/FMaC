@@ -1,0 +1,90 @@
+[
+    {
+      "image": "./pics/newsphotos/zeher.png",
+      "logo": "./pics/logos/zeher.png",
+      "synopsis": "In a desperate bid to find a paper leaker, two students embark on an absurd quest. However, their plan soon takes an unexpected turn. Offering a comical blend of mystery and moral ambiguity, FMaC presents to you: 'ZEHER.'",
+      "achievement":false,
+      "trailer":true,
+      "movie_link":"https://www.youtube.com/watch?v=aY4prUqr3jY&t=215s",
+      "trailer_link":"https://www.youtube.com/watch?v=aY4prUqr3jY&t=215s"
+    },
+    
+    {
+      "image": "./pics/newsphotos/rakshasa.png",
+      "logo": "./pics/logos/rakshasa.png",
+      "synopsis": "'हर रावण की कहानी में एक चीज निश्चित है.....उसका अंत' Two college friends get involved in a crime and must safeguard themselves from legal actions. As time ticks their friendship and morality is tested uncovering some dark truths along the journey.",
+      "achievement":true,
+      "trailer":true,
+      "achievement_laural":"./pics/laurals/jiff.png",
+      "trailer_link":"https://www.youtube.com/watch?v=hg3YkJYvOy0&t=365s",
+      "movie_link":"https://www.youtube.com/watch?v=hg3YkJYvOy0&t=365s"
+    },
+    
+    {
+        "image": "./pics/newsphotos/dearex.png",
+        "logo": "./pics/logos/dearex.png",
+        "synopsis": "How far do our mistakes define us? 'sorry' explores the ugly aftermath of a broken friendship in a tale told visually. This film features original music made by members of the Filmmaking Club.",
+        "achievement":false,
+        "trailer":false,
+        "movie_link":"https://www.youtube.com/watch?v=aXt-E4D3xng&t=262s"
+      },
+     
+      {
+        "image": "./pics/newsphotos/shoelaces.png",
+        "logo": "./pics/logos/shoelaces.png",
+        "synopsis": "How far do our mistakes define us? 'sorry' explores the ugly aftermath of a broken friendship in a tale told visually. This film features original music made by members of the Filmmaking Club.",
+        "achievement":false,
+        "trailer":false,
+        "movie_link":"https://www.youtube.com/watch?v=aXt-E4D3xng&t=262s"
+      },
+     
+      {
+        "image": "./pics/newsphotos/reverto.png",
+        "logo": "./pics/logos/reverto.png",
+        "synopsis": "How far do our mistakes define us? 'sorry' explores the ugly aftermath of a broken friendship in a tale told visually. This film features original music made by members of the Filmmaking Club.",
+        "achievement":false,
+        "trailer":false,
+        "movie_link":"https://www.youtube.com/watch?v=aXt-E4D3xng&t=262s"
+      },
+      {
+        "image": "./pics/newsphotos/impostor.png",
+        "logo": "./pics/logos/impostor.png",
+        "synopsis": "How far do our mistakes define us? 'sorry' explores the ugly aftermath of a broken friendship in a tale told visually. This film features original music made by members of the Filmmaking Club.",
+        "achievement":false,
+        "trailer":false,
+        "movie_link":"https://www.youtube.com/watch?v=aXt-E4D3xng&t=262s"
+      },
+      {
+        "image": "./pics/newsphotos/pictureimperfect.png",
+        "logo": "./pics/logos/sorry.png",
+        "synopsis": "How far do our mistakes define us? 'sorry' explores the ugly aftermath of a broken friendship in a tale told visually. This film features original music made by members of the Filmmaking Club.",
+        "achievement":false,
+        "trailer":false,
+        "movie_link":"https://www.youtube.com/watch?v=aXt-E4D3xng&t=262s"
+      },
+      {
+        "image": "./pics/newsphotos/aaja.png",
+        "logo": "./pics/logos/aaja.png",
+        "synopsis": "How far do our mistakes define us? 'sorry' explores the ugly aftermath of a broken friendship in a tale told visually. This film features original music made by members of the Filmmaking Club.",
+        "achievement":false,
+        "trailer":false,
+        "movie_link":"https://www.youtube.com/watch?v=aXt-E4D3xng&t=262s"
+      },
+      {
+        "image": "./pics/newsphotos/aaja2018.png",
+        "logo": "./pics/logos/aaja.png",
+        "synopsis": "How far do our mistakes define us? 'sorry' explores the ugly aftermath of a broken friendship in a tale told visually. This film features original music made by members of the Filmmaking Club.",
+        "achievement":false,
+        "trailer":false,
+        "movie_link":"https://www.youtube.com/watch?v=aXt-E4D3xng&t=262s"
+      },
+      {
+        "image": "./pics/newsphotos/aaja2022.png",
+        "logo": "./pics/logos/aaja.png",
+        "synopsis": "How far do our mistakes define us? 'sorry' explores the ugly aftermath of a broken friendship in a tale told visually. This film features original music made by members of the Filmmaking Club.",
+        "achievement":false,
+        "trailer":false,
+        "movie_link":"https://www.youtube.com/watch?v=aXt-E4D3xng&t=262s"
+      }
+  ]
+  
