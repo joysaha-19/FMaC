@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-img {
-  loading: lazy;
-}
+@media screen and (min-width:501px){
+  
+
 a:link {
   color: white;
   text-decoration: none;
@@ -643,3 +643,680 @@ a:visited {
   width: 100%;
   object-fit: contain;
 }
+}
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  a:link {
+    color: white;
+    text-decoration: none;
+  }
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  .parentfilmsparent {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+  }
+  .parentfilms {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    /* display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0px 3fr 20px 2fr; */
+    background-color: black;
+    overflow-y: scroll;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+    z-index: 1;
+  }
+  .transparentcoverparent {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.7;
+    background-color: black;
+    z-index: 2;
+    display: none;
+  }
+  .suggestionsparent {
+    /* grid-row: 2/3;
+      grid-column: 1/2; */
+    height: 400px;
+    width: 95vw;
+    background-color: transparent;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    margin-left: 2.5vw;
+    margin-top: 2.5vw;
+  }
+  .scroll {
+    height: 89.5%;
+    bottom: 0.5%;
+    width: 50px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+  }
+  .leftscroll {
+    left: -2%;
+  }
+  .rightscroll {
+    right: -2%;
+    transform: rotateY(180deg);
+  }
+  
+  .actualbutton {
+    height: 20%;
+    width: 50%;
+    background-color: white;
+    clip-path: polygon(80% 0%, 100% 0%, 20% 50%, 100% 100%, 80% 100%, 0% 50%);
+    z-index: inherit;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .scroll:hover .actualbutton {
+    transform: scale(1.2);
+  }
+  .suggestions {
+    background-color: transparent;
+    position: relative;
+    height: 100%;
+    /* width: 95vw; */
+    /* width: 300vw; */
+    /* background:linear-gradient(
+          90deg,
+          black 0%,
+          transparent 90% 100%
+      ); */
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    /* transform: translate(-50%, -50%); */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* overflow-x: scroll; */
+    /* transform: translate(-200vw,0); */
+    transition: transform 0.3s ease;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    gap: 5vw;
+  }
+  
+  .suggestioncomponent {
+    height: 100%;
+    width: 95vw;
+    flex-shrink: 0;
+    flex-grow: 0;
+    position: relative;
+  }
+  
+  .suggestionsinfo {
+    /* grid-column: 2/3; */
+    /* background-color: red; */
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: 11;
+    background: transparent;
+  }
+  .videotrigger {
+    height: 100%;
+    width: 50%;
+    background-color: transparent;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    z-index: 11;
+    display: none;
+  }
+  
+  .soundbutton {
+    position: absolute;
+    left: 3%;
+    bottom: 3%;
+    height: 38px;
+    width: 38px;
+    background-color: rgb(252, 249, 249);
+    border-radius: 50%;
+    transition: opacity 0.5s ease;
+    display: none;
+  }
+  .soundbutton img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: transparent;
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+  }
+  
+  .filminfo {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: transparent;
+  }
+  .achievementbox {
+    height: 125px;
+    width: 150px;
+    background-color: rgba(218, 209, 209, 0.351);
+    position: absolute;
+    top: 1.6%;
+    right: 2%;
+    z-index: 100;
+  }
+  
+  .lauralimage {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: none;
+  }
+  .otherinfo {
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    /* transform: translate(-50%, 0%); */
+    background-color: transparent;
+  
+    /* display: flex;
+    justify-content: center;
+    align-items: flex-start; */
+    /* gap: 20px; */
+    transition: font-size 0.2s ease;
+  }
+  
+  .youtubebutton {
+    color: white;
+    text-align: center;
+    height: 50px;
+    width: 70%;
+    background-color: rgba(215, 207, 207, 0.223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: background-color 0.1s ease;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border: 1px solid black;
+  }
+  
+  .trailer {
+    display: none;
+  }
+  
+  .logobox {
+    height: 40%;
+    width: 80%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .suggestionsimage {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    /* background-color: azure; */
+  }
+  .suggimage {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 1;
+    z-index: 10;
+  }
+  .suggvideo {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    opacity: 0;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: none;
+  }
+  
+  .logoimage {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  .synopsis {
+    height: 30%;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background-color: aliceblue;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    font-size: 15px;
+    line-height: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: none;
+  }
+  
+  .descriptionbox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    width: 95vw;
+    /* background-color: aqua; */
+    display: none;
+    z-index: 5;
+    animation: pullup 0.3s ease 0.1s 1 normal both;
+  }
+  @keyframes pullup {
+    0% {
+      top: 100%;
+      opacity: 0;
+    }
+    100% {
+      top: 50%;
+      opacity: 1;
+    }
+  }
+  
+  .descriptionbox img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .transparentcover {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.492);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+  .transparentcover .logobox{
+      top: 15%;
+  }
+  .transparentcover .logobox img {
+    object-fit: contain;
+    position: absolute;
+   
+    height: 70%;
+    width: 90%;
+  }
+  .descriptionplay {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    width: 30%;
+    height: 10%;
+    background-color: rgba(102, 100, 100, 0.552);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: background-color 0.1s ease;
+  }
+  .descriptionplay img {
+    height: 100%;
+    width: 40%;
+    object-fit: contain;
+  }
+  .descriptionplay:hover {
+    background-color: azure;
+  }
+  .infotext {
+    height: 50%;
+    width: 90%;
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    background-color: transparent;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+  }
+  .plotinfo {
+    grid-row: 1/2;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+  }
+  .credits {
+    grid-row: 2/3;
+    width: 35%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.649);
+  }
+  .directorsname {
+    grid-row: 1/2;
+    display: flex;
+  
+    background-color: transparent;
+  }
+  .castname {
+    grid-row: 2/3;
+  
+    background-color: transparent;
+  }
+  .filmsarea {
+    /* grid-row: 4/5;
+      grid-column: 1/2; */
+    width: 100%;
+    background-color: black;
+    margin-top: 20px;
+    /* display: grid;
+      grid-template-rows: 80px 10px 80px 1fr ; */
+  }
+  .filmmenusparent {
+    /* display: none; */
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    
+  }
+  
+  .filmmenuscontainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border-bottom:2px solid red; */
+    /* gap: 2px; */
+  }
+  
+  .filmmenuoption {
+    height: 100%;
+    width: 20%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: rgb(185, 179, 179);
+    font-size: 12px;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 2px solid black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    flex: 1;
+    text-align: center;
+    transition: font-size 0.3s ease, color 0.3s ease;
+  
+  }
+  .filemenuoption:hover{
+    font-size: 12px;
+  }
+  
+  .filmmenuoption p{
+      word-wrap: break-word;
+  }
+  
+  .menuselector {
+    height: 50%;
+    width: 20%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    border: none;
+    border-bottom: 2px solid red;
+    /* border-bottom: 2px solid black; */
+    border-radius: 0;
+    background-color: transparent;
+    transition: transform 0.2s ease;
+  }
+
+  
+  /* .filmmenuoption:hover {
+    font-size: 22px;
+    color: white;
+  } */
+  
+  .searcharea {
+    /* grid-row: 3/4;
+      grid-column: 1/2; */
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  .searchbar {
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 60%;
+    border-radius: 50px;
+    background-color: gray;
+    cursor: pointer;
+  }
+  .searchicon {
+    height: 80%;
+    width: 20%;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0%, -50%);
+    background-color: gray;
+    display: none;
+  }
+  
+  .searchtext {
+    height: 80%;
+    width: 80%;
+    top: 50%;
+    left: 5%;
+    position: absolute;
+    transform: translate(0%, -50%);
+    background-color: gray;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sort {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 50%;
+    right: -200%;
+    transform: translate(0%, -50%);
+    /* display: none; */
+  }
+  
+  /* .sort:hover {
+    background-color: gray;
+  } */
+  
+  .homecontent {
+    width: 100%;
+    background-color: black;
+    margin-top: 1px;
+  }
+  
+  .homecontent .block {
+    height: 300px;
+    width: 100%;
+    /* display: flex;
+      justify-content: flex-start;
+      align-items: center; */
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+  }
+  
+  .heading {
+    grid-row: 1/2;
+    width: 100%;
+    background-color: black;
+    text-align: left;
+    font-size: 30px;
+    /* display: flex;
+      justify-content: flex-start;
+      align-items: flex-end; */
+    position: relative;
+  }
+  .heading p {
+    position: absolute;
+    top: 100%;
+    left: 1%;
+    transform: translate(0%, -160%);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+  }
+  
+  .listbox {
+    grid-row: 2/3;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background-color: black;
+    gap: 10px;
+  }
+  .listelement {
+    height: 95%;
+    width: 250px;
+    background-color: gray;
+    flex-shrink: 0;
+    flex-grow: 0;
+    position: relative;
+    z-index: 4;
+  }
+  .offset {
+    height: 90%;
+    width: 2px;
+  }
+  .infobar {
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+  }
+  
+  .infobutton {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .listelement:hover .infobar {
+    opacity: 1;
+  }
+  
+  .listelimage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(0);
+    aspect-ratio: 3/2;
+  }
+  
+  .listlogo {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -110%);
+    height: 20%;
+    width: 100%;
+  }
+  .listlogo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  }
