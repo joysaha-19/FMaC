@@ -1287,6 +1287,7 @@ a:visited {
     width: 30px;
     transition: opacity 0.3s ease;
     opacity: 0;
+    display: none;
   }
   
   .infobutton {
