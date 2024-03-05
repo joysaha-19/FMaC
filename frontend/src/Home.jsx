@@ -35,7 +35,7 @@ export default function Home() {
   }, []);
   useEffect(() => {
     const handleBeforeUnload = (event) => {
-      localStorage.removeItem('loaded');
+      sessionStorage.removeItem('loaded');
     
     };
     window.addEventListener('beforeunload', handleBeforeUnload);
@@ -45,7 +45,7 @@ export default function Home() {
   }, []);
  useEffect(()=>{
   function adjust(){
-    if(localStorage.getItem("loaded")==="1")
+    if(sessionStorage.getItem("loaded")==="1")
     {
         if(window.innerWidth>=501)
         {
@@ -127,7 +127,7 @@ export default function Home() {
       }
     else{
      const a=   setTimeout(()=>{
-          localStorage.setItem("loaded","1");
+          sessionStorage.setItem("loaded","1");
               return ()=>clearTimeout(a)
         },11000);
        
@@ -143,7 +143,7 @@ export default function Home() {
  useEffect(() => {
   
   function adjust(){
-    if(localStorage.getItem("loaded")==="1")
+    if(sessionStorage.getItem("loaded")==="1")
     {
         if(window.innerWidth>=501)
         {
@@ -225,7 +225,7 @@ export default function Home() {
       }
     else{
      const a=   setTimeout(()=>{
-          localStorage.setItem("loaded","1");
+          sessionStorage.setItem("loaded","1");
               return ()=>clearTimeout(a)
         },11000);
        
