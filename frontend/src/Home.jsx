@@ -30,7 +30,9 @@ export default function Home() {
     false,
   ]);
   const loading=false;
-  
+  useEffect(() => {
+    document.title = "FMaC BITS Goa";
+  }, []);
   useEffect(() => {
     const handleBeforeUnload = (event) => {
       localStorage.removeItem('loaded');
