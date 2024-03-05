@@ -7,7 +7,8 @@
     "achievement":false,
     "trailer":true,
     "movie_link":"https://www.youtube.com/watch?v=aY4prUqr3jY&t=215s",
-    "trailer_link":"https://www.youtube.com/watch?v=aY4prUqr3jY&t=215s"
+    "trailer_link":"https://www.youtube.com/watch?v=aY4prUqr3jY&t=215s",
+    "cloudurl":"https://storage.googleapis.com/fmac_website_videos/suggestion_videos/zeher.mp4"
    
   },
   {
@@ -19,7 +20,8 @@
     "trailer":true,
     "achievement_laural":"./pics/laurals/jiff.png",
     "trailer_link":"https://www.youtube.com/watch?v=hg3YkJYvOy0&t=365s",
-    "movie_link":"https://www.youtube.com/watch?v=hg3YkJYvOy0&t=365s"
+    "movie_link":"https://www.youtube.com/watch?v=hg3YkJYvOy0&t=365s",
+    "cloudurl":"https://storage.googleapis.com/fmac_website_videos/suggestion_videos/rakshasa.mp4"
   },
   {
     "image": "./pics/newsphotos/sorry.jpg",
@@ -28,6 +30,7 @@
     "synopsis": "How far do our mistakes define us? 'sorry' explores the ugly aftermath of a broken friendship in a tale told visually. This film features original music made by members of the Filmmaking Club.",
     "achievement":false,
     "trailer":false,
-    "movie_link":"https://www.youtube.com/watch?v=aXt-E4D3xng&t=262s"
+    "movie_link":"https://www.youtube.com/watch?v=aXt-E4D3xng&t=262s",
+    "cloudurl":"https://storage.googleapis.com/fmac_website_videos/suggestion_videos/sorry.mp4"
   }
 ]

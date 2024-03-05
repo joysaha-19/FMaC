@@ -190,7 +190,7 @@ function handleclosedescription(){
           {sugg.map((value, index) => {
             return (
               <>
-                <div
+                <div key={index}
                   className="suggestioncomponent"
                 >
                   {value["achievement"] && (
@@ -217,7 +217,7 @@ function handleclosedescription(){
                       muted={soundimage === "./pics/utils/soundoff.png"}
                     >
                       <source src={value["video"]} type="video/mp4" />
-                      <source src="./movie.ogg" type="video/ogg" />
+                      {/* <source src="./movie.ogg" type="video/ogg" /> */}
                       Your browser does not support the video tag.
                     </video>
                   </div>
@@ -352,7 +352,7 @@ function handleclosedescription(){
             {
               menuarr.map((value,index)=>{
                     return (<>
-                       <div className="block">
+                       <div className="block" key={index}>
             <div className="heading">
               <p>{value}</p>
             </div>
@@ -362,7 +362,7 @@ function handleclosedescription(){
               
               listindex[index].map((value1,index1)=>{
                      return(
-                      <div className="listelement" onClick={(e)=>showFilmInfo(index,index1)} >
+                      <div className="listelement" onClick={(e)=>showFilmInfo(index,index1)} key={index1} >
                         <img className="listelimage" src={value1["image"]} alt="listimage"></img>
                         <div className="infobar">
                        <img className="infobutton" alt="info" src="./pics/utils/info.png"></img>

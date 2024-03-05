@@ -98,7 +98,7 @@ export default function Home() {
         <div className="menubar">
           {options.map((value, index) => {
             return (
-              <div
+              <div key={index}
                 className="menuoption"
                 onClick={() => handleshiftcontent(index)}
               >
