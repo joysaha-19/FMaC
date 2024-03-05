@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useState,useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "./home.css";
-import "./intro.css";
+// import "./intro.css";
 export default function Home() {
   //global variables
   const navigate= useNavigate();
@@ -44,55 +44,206 @@ export default function Home() {
     };
   }, []);
  useEffect(()=>{
-  if(localStorage.getItem("loaded")==="1")
-  {
+  function adjust(){
+    if(localStorage.getItem("loaded")==="1")
+    {
+        if(window.innerWidth>=501)
+        {
+        fmactitleref.current.style.animation='none';
+        fmactitleref.current.style.top='-30%'
+        fmactitleref.current.style.left='50%'
+        fmactitleref.current.style.opacity=1;
+        fmactitleref.current.style.fontSize='75px';
   
-      fmactitleref.current.style.animation='none';
-      fmactitleref.current.style.top='-30%'
-      fmactitleref.current.style.left='50%'
-      fmactitleref.current.style.opacity=1;
-      fmactitleref.current.style.fontSize='75px';
-
-      disappearingtextref1.current.style.animation='none';
-      disappearingtextref1.current.style.fontSize=0;
-      disappearingtextref2.current.style.animation='none';
-      disappearingtextref2.current.style.fontSize=0;
-      disappearingtextref3.current.style.animation='none';
-      disappearingtextref3.current.style.fontSize=0;
-    
-
-      highlighttextref1.current.style.animation='none';
-      highlighttextref1.current.style.color='red';
-      highlighttextref2.current.style.animation='none';
-      highlighttextref2.current.style.color='red';
-      highlighttextref3.current.style.animation='none';
-      highlighttextref3.current.style.color='red';
-      highlighttextref4.current.style.animation='none';
-      highlighttextref4.current.style.color='red';
-
-      fmaclogoref.current.style.animation='none';
-      fmaclogoref.current.style.opacity=1;
-
-      menubarref.current.style.animation='none';
-      menubarref.current.style.opacity=1;
-
-      newsref.current.style.animation='none';
-      newsref.current.style.transform='scale(1)';
-
-      videoRef.current.style.display='none';
-
-      dateref.current.style.animation='none';
-      dateref.current.style.opacity=1;
+        disappearingtextref1.current.style.animation='none';
+        disappearingtextref1.current.style.fontSize=0;
+        disappearingtextref2.current.style.animation='none';
+        disappearingtextref2.current.style.fontSize=0;
+        disappearingtextref3.current.style.animation='none';
+        disappearingtextref3.current.style.fontSize=0;
+      
+  
+        highlighttextref1.current.style.animation='none';
+        highlighttextref1.current.style.color='red';
+        highlighttextref2.current.style.animation='none';
+        highlighttextref2.current.style.color='red';
+        highlighttextref3.current.style.animation='none';
+        highlighttextref3.current.style.color='red';
+        highlighttextref4.current.style.animation='none';
+        highlighttextref4.current.style.color='red';
+  
+        fmaclogoref.current.style.animation='none';
+        fmaclogoref.current.style.opacity=1;
+  
+        menubarref.current.style.animation='none';
+        menubarref.current.style.opacity=1;
+  
+        newsref.current.style.animation='none';
+        newsref.current.style.transform='scale(1)';
+  
+        videoRef.current.style.display='none';
+  
+        dateref.current.style.animation='none';
+        dateref.current.style.opacity=1;
+        }
+        else{
+        fmactitleref.current.style.animation='none';
+        fmactitleref.current.style.top='-15%'
+        fmactitleref.current.style.left='50%'
+        fmactitleref.current.style.opacity=1;
+        fmactitleref.current.style.fontSize='45px';
+  
+        disappearingtextref1.current.style.animation='none';
+        disappearingtextref1.current.style.fontSize=0;
+        disappearingtextref2.current.style.animation='none';
+        disappearingtextref2.current.style.fontSize=0;
+        disappearingtextref3.current.style.animation='none';
+        disappearingtextref3.current.style.fontSize=0;
+      
+  
+        highlighttextref1.current.style.animation='none';
+        highlighttextref1.current.style.color='red';
+        highlighttextref2.current.style.animation='none';
+        highlighttextref2.current.style.color='red';
+        highlighttextref3.current.style.animation='none';
+        highlighttextref3.current.style.color='red';
+        highlighttextref4.current.style.animation='none';
+        highlighttextref4.current.style.color='red';
+  
+        fmaclogoref.current.style.animation='none';
+        fmaclogoref.current.style.opacity=1;
+  
+        menubarref.current.style.animation='none';
+        menubarref.current.style.opacity=1;
+  
+        newsref.current.style.animation='none';
+        newsref.current.style.transform='scale(1)';
+  
+        videoRef.current.style.display='none';
+  
+        dateref.current.style.animation='none';
+        dateref.current.style.opacity=1;
+        }
+      }
+    else{
+     const a=   setTimeout(()=>{
+          localStorage.setItem("loaded","1");
+              return ()=>clearTimeout(a)
+        },11000);
+       
     }
-  else{
-   const a=   setTimeout(()=>{
-        localStorage.setItem("loaded","1");
-            return ()=>clearTimeout(a)
-      },11000);
-     
+
   }
+
+  adjust();
+ 
  });
 
+
+ useEffect(() => {
+  
+  function adjust(){
+    if(localStorage.getItem("loaded")==="1")
+    {
+        if(window.innerWidth>=501)
+        {
+        fmactitleref.current.style.animation='none';
+        fmactitleref.current.style.top='-30%'
+        fmactitleref.current.style.left='50%'
+        fmactitleref.current.style.opacity=1;
+        fmactitleref.current.style.fontSize='75px';
+  
+        disappearingtextref1.current.style.animation='none';
+        disappearingtextref1.current.style.fontSize=0;
+        disappearingtextref2.current.style.animation='none';
+        disappearingtextref2.current.style.fontSize=0;
+        disappearingtextref3.current.style.animation='none';
+        disappearingtextref3.current.style.fontSize=0;
+      
+  
+        highlighttextref1.current.style.animation='none';
+        highlighttextref1.current.style.color='red';
+        highlighttextref2.current.style.animation='none';
+        highlighttextref2.current.style.color='red';
+        highlighttextref3.current.style.animation='none';
+        highlighttextref3.current.style.color='red';
+        highlighttextref4.current.style.animation='none';
+        highlighttextref4.current.style.color='red';
+  
+        fmaclogoref.current.style.animation='none';
+        fmaclogoref.current.style.opacity=1;
+  
+        menubarref.current.style.animation='none';
+        menubarref.current.style.opacity=1;
+  
+        newsref.current.style.animation='none';
+        newsref.current.style.transform='scale(1)';
+  
+        videoRef.current.style.display='none';
+  
+        dateref.current.style.animation='none';
+        dateref.current.style.opacity=1;
+        }
+        else{
+        fmactitleref.current.style.animation='none';
+        fmactitleref.current.style.top='-15%'
+        fmactitleref.current.style.left='50%'
+        fmactitleref.current.style.opacity=1;
+        fmactitleref.current.style.fontSize='45px';
+  
+        disappearingtextref1.current.style.animation='none';
+        disappearingtextref1.current.style.fontSize=0;
+        disappearingtextref2.current.style.animation='none';
+        disappearingtextref2.current.style.fontSize=0;
+        disappearingtextref3.current.style.animation='none';
+        disappearingtextref3.current.style.fontSize=0;
+      
+  
+        highlighttextref1.current.style.animation='none';
+        highlighttextref1.current.style.color='red';
+        highlighttextref2.current.style.animation='none';
+        highlighttextref2.current.style.color='red';
+        highlighttextref3.current.style.animation='none';
+        highlighttextref3.current.style.color='red';
+        highlighttextref4.current.style.animation='none';
+        highlighttextref4.current.style.color='red';
+  
+        fmaclogoref.current.style.animation='none';
+        fmaclogoref.current.style.opacity=1;
+  
+        menubarref.current.style.animation='none';
+        menubarref.current.style.opacity=1;
+  
+        newsref.current.style.animation='none';
+        newsref.current.style.transform='scale(1)';
+  
+        videoRef.current.style.display='none';
+  
+        dateref.current.style.animation='none';
+        dateref.current.style.opacity=1;
+        }
+      }
+    else{
+     const a=   setTimeout(()=>{
+          localStorage.setItem("loaded","1");
+              return ()=>clearTimeout(a)
+        },11000);
+       
+    }
+
+  }
+
+  window.addEventListener("resize", adjust);
+
+  adjust();
+
+  // Cleanup function to remove the event listener
+  return () => {
+    window.removeEventListener("resize", adjust);
+  };
+});
+
+ 
 
     useEffect(()=>{
 let t;
@@ -134,7 +285,7 @@ t=11000;
   // const arr= new Array(100).fill(1);
   return (
     <div className="parenthome" ref={mainref}>
-        <div className="filmreels1" ref={reelref}>
+        <div className="filmreels" ref={reelref} >
         <video ref={videoRef} width="110%" height="110%" autoPlay muted  style={{objectFit:'cover'}}>
           <source src="./introdf1.mp4" type="video/mp4" />
           <source src="./movie.ogg" type="video/ogg" />
@@ -180,7 +331,7 @@ t=11000;
               >
                 <p
                   style={{
-                    fontSize: !optionsarray[index] ? "17px" : "20px",
+                    // fontSize: !optionsarray[index] ? "13px" : "15px",
                     color: optionsarray[index] ? "red" : "white",
                   }}
                 >

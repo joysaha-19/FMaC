@@ -27,422 +27,859 @@ p {
   position: relative;
   overflow-y: hidden;
 }
-.maincontent{
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  position: absolute;
-    top: 0%;
-    left: 0%;
-    /* transform: translate(-50%,-50%); */
-
-    display: grid;
-    grid-template-rows: 170px 1fr;
-
-}
-.titlebar {
-  grid-row: 1/2;
-  width: 100%;
-  /* display: flex;
-  justify-content: flex-start;
-  align-items: center; */
-  gap: 10px;
-  /* background:linear-gradient(
-    90deg,
-    red 0%,
-    rgb(172, 73, 73) 30%,
-    rgb(245, 175, 175) 100%
-  ); */
-  background-color: black;
-  position: relative;
+@media  screen and (min-width:501px) {
+  .maincontent{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+      top: 0%;
+      left: 0%;
+      /* transform: translate(-50%,-50%); */
   
-}
-
-.dot {
-  animation: dotappear 0.9s ease 7.1s 1 normal forwards;
-  opacity: 0;
-  color: white;
-  font-size: 75px;
-}
-
-.fmactitle  {
-  font-size: 100px;
-  /* font-family: 'Diphylleia', serif; */
-  /* font-family: 'Permanent Marker', cursive; */
-  font-family: "Protest Riot", sans-serif;
-  /* font-family: 'Merriweather', serif; */
-  font-family: 'Montserrat', sans-serif;
-
-  position: absolute;
-  left: 50%;
-  top: 110%;
-  white-space: nowrap;
-  transform: translate(-50%,0%);
-  animation: reposition 1s ease 7.5s 1 normal forwards , textappear 3s ease 0s 1 normal forwards;
-  z-index: 5;
-  opacity: 0;
-}
-@keyframes textappear{
-  0%{
-    opacity: 0;
+      display: grid;
+      grid-template-rows: 170px 1fr;
+  
   }
-  60%{
-    opacity: 1;
+  .titlebar {
+    grid-row: 1/2;
+    width: 100%;
+    /* display: flex;
+    justify-content: flex-start;
+    align-items: center; */
+    gap: 10px;
+    /* background:linear-gradient(
+      90deg,
+      red 0%,
+      rgb(172, 73, 73) 30%,
+      rgb(245, 175, 175) 100%
+    ); */
+    background-color: black;
+    position: relative;
+    
   }
-  100%{
-    opacity: 1;
-  }
-}
-.hightlighttext {
-  color: white;
-  animation: colourchange 0.7s ease 6s 1 normal forwards;
-}
-
-.disappearingtext {
-  color: white;
-  animation: textdisappear 1.3s ease 6.2s 1 normal forwards;
-}
-.fmaclogo {
-  height: 180px;
-  width: 200px;
-  object-fit: cover;
-  position: absolute;
-  left: 0%;
-  top: 50%;
-  transform: translateY(-50%);
-  opacity: 0;
-  animation: logoappear 0.4s ease 8.5s 1 normal forwards;
-}
-.date{
-  position: absolute;
-  top:65%;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-.date p{
-  font-size: 20px;
-  color: white;
-  font-family: 'Diphylleia', serif;
-  transform: scale(1);
-  opacity: 0;
-  animation: logoappear 0.7s ease 8.6s 1 normal forwards;
-}
-.contentbox {
-  grid-row: 3/4;
-  background-color: black;
-  display: grid;
-  grid-template-rows: 70px 1fr;
-  grid-template-columns: 0px 1fr 0px;
-}
-
-.menubar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  grid-column: 2/3;
-  grid-row: 1/2;
-  width: 100%;
-  /* background-color: gray; */
-  /* background:linear-gradient(
-    90deg,
-    red 0%,
-    rgb(172, 73, 73) 30%,
-    rgb(245, 175, 175) 100%
-  ); */
-  background-color: black;
-  /* border: 0px solid white;
-  border-radius: 10px;
-  border-bottom: none;
-  border-right: none;
-  border-left: none; */
-  z-index: 2;
-  opacity: 0;
-  animation: menuappear 0.5s ease 8.5s 1 normal forwards;
-}
-
-@keyframes menuappear{
-  0%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
-}
-
-.menuoption {
-  height: 86%;
-  width: 15%;
-  background-color: black;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.2s ease, background-color 0.2s ease;
-  margin-top: 5px;
-  /* animation: newsappear 0.5s ease 8.5s 1 normal forwards; */
-  /* transform: scale(0); */
-}
-.menuoption p {
-  font-family: "Protest Riot", sans-serif;
-  font-size: 20px;
-  transition: color 0.2s ease;
-  color: white;
-  transition: font-size 0.2s ease;
-}
-.menuoption:hover {
-  background-color: rgba(241, 62, 62, 0.549);
-}
-/* .menuoption:hover p{
-    color: white;
-} */
-
-.news {
-  grid-column: 2/3;
-  grid-row: 2/3;
-  background-color: black;
-  display: grid;
-  grid-template-columns: repeat(10,1fr);
-  grid-auto-rows: minmax(100px, auto);  
-  gap: 10px;
-  transform: scale(0);
-  animation: newsappear 0.6s ease-out 8.5s 1 normal forwards;
-}
-.loadingscreen{
-    grid-column:1/11 ;
-grid-row: 1/7;   
- background-color:transparent;
+  
+  .filmreels {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    /* display: grid;
+      grid-template-rows: 1fr 10px 1fr 10px 1fr ; */
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.newsimage{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transform: scale(1);
-    opacity: 0.5;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-   z-index: 3;
-   background-color: black;
-
-}
-
-.newsbox:hover .newsimage{
-opacity: 1;
-}
-
-.newstag {
+    overflow-x: hidden;
+    z-index: 2;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    width: 70%;
-    opacity: 1;
-    /* animation: newstextappear 1s linear 6s 1 normal forwards; */
-    transition: top 0.3s ease, left 0.3s ease;
-}
-.newsbox:hover .newstag{
-  opacity: 1;
-  font-size: 30px;
-  top:5%;
-  left: 50%;
-  width: 80%;
-  text-align: left;
-
+    transform: translate(-50%, -50%);
+    animation: videodisappear 7.6s ease 0s 1 normal forwards;
   }
-
-.tag1{
-    color: rgba(255, 255, 255, 0.804);
-    font-size: 50px;
-}
-.tag2{
-    color: rgba(255, 255, 255, 0.804);
-    font-size: 50px;
-}
-.tag3{
-    color: rgba(255, 255, 255, 0.804);
-    font-size: 50px;
-}
-.tag4{
-  color: rgba(255, 255, 255, 0.804);
-    font-size: 50px;
-}
-.tag5{
-  color: rgba(255, 255, 255, 0.804);
-    font-size: 50px;
-}
-.newsbox{
-  height: 100%;
-  width: 100%;
-}
-.news1 {
-  grid-column: 1/6;
-  grid-row: 1/5;
-  /* background-color: aqua; */
-  position: relative;
-
-}
-
-.news2 {
-  grid-column: 6/11;
-  grid-row: 1/4;
-  /* background-color: red; */
-  position: relative;
-
-}
-.end{
-  grid-column: 1/11;
-  grid-row: 8/9
-}
-/* .news4 {
-  grid-column: 3/4;
-  grid-row: 1/3;
-  background-color: blue;
-  position: relative;
-
-}
-
-.news3 {
-    grid-column: 3/4;
-    grid-row: 3/6;
-    background-color: blanchedalmond;
-    position: relative;
-
-  } */
-.news3{
-    grid-column: 6/11;
-    grid-row: 4/8;
-    /* background-color: gold; */
-    position: relative;
-
-}
-.news4{
-    grid-column: 1/6;
-    grid-row: 5/8;
-    /* background-color: gold; */
-    position: relative;
-
-}
-
-.news5{
-  grid-column: 1/7;
-  grid-row: 8/11;
-  /* background-color: gold; */
-  position: relative;
-
-}
-
-.loader {
-    border: 5px solid rgba(0, 0, 0, 0.1); /* Light grey border */
-    border-radius: 50%; /* Make it round */
-    border-top: 5px solid #db3434a6; /* Blue border */
-    width: 70px; /* Size */
-    height: 70px; /* Size */
-    animation: spin 2s linear  infinite; /* Animation */
-    display: none;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-
-
-
-@keyframes textdisappear {
-  0% {
-    font-size: 100px;
-    opacity: 1;
-  }
-  60% {
-    font-size: 100px;
-    opacity: 0;
-  }
-
-  100% {
-    font-size: 0px;
-    opacity: 0;
-  }
-}
-
-@keyframes dotappear {
-  0% {
-    font-size: 75px;
-    opacity: 0;
-  }
-
-  100% {
-    font-size: 75px;
-    opacity: 1;
-  }
-}
-
-@keyframes newsappear{
-    0%{
-        transform: scale(0);
-    }
-
-    100%{
-        transform: scale(1);
-    }
-}
-
-
-@keyframes newstextappear{
-  0%{
-     opacity: 0;
-  }
-
-  100%{
+  @keyframes videodisappear {
+    0% {
       opacity: 1;
+    }
+  
+    45% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
   }
-}
-@keyframes reposition{
-  0%{
-    top: 110%;
-    left: 50%;
-    font-size: 100px;
-  }
-  100%{
-    top: -30%;
-    left: 50%;
+  
+  .dot {
+    animation: dotappear 0.9s ease 7.1s 1 normal forwards;
+    opacity: 0;
+    color: white;
     font-size: 75px;
   }
-}
-
-@keyframes logoappear{
-  0%{
+  
+  .fmactitle  {
+    font-size: 100px;
+    /* font-family: 'Diphylleia', serif; */
+    /* font-family: 'Permanent Marker', cursive; */
+    font-family: "Protest Riot", sans-serif;
+    /* font-family: 'Merriweather', serif; */
+    font-family: 'Montserrat', sans-serif;
+  
+    position: absolute;
+    left: 50%;
+    top: 110%;
+    white-space: nowrap;
+    transform: translate(-50%,0%);
+    animation: reposition 1s ease 7.5s 1 normal forwards , textappear 3s ease 0s 1 normal forwards;
+    z-index: 5;
     opacity: 0;
   }
-
-  100%{
-    opacity: 1;
+  @keyframes textappear{
+    0%{
+      opacity: 0;
+    }
+    60%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 1;
+    }
   }
-}
-
-@keyframes colourchange {
-  0%{
+  .hightlighttext {
     color: white;
+    animation: colourchange 0.7s ease 6s 1 normal forwards;
   }
-  100%{
-    color: red;
+  
+  .disappearingtext {
+    color: white;
+    animation: textdisappear 1.3s ease 6.2s 1 normal forwards;
   }
+  .fmaclogo {
+    height: 180px;
+    width: 200px;
+    object-fit: cover;
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    animation: logoappear 0.4s ease 8.5s 1 normal forwards;
+  }
+  .date{
+    position: absolute;
+    top:65%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .date p{
+    font-size: 20px;
+    color: white;
+    font-family: 'Diphylleia', serif;
+    transform: scale(1);
+    opacity: 0;
+    animation: logoappear 0.7s ease 8.6s 1 normal forwards;
+  }
+  .contentbox {
+    grid-row: 3/4;
+    background-color: black;
+    display: grid;
+    grid-template-rows: 70px 1fr;
+    grid-template-columns: 0px 1fr 0px;
+  }
+  
+  .menubar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 100%;
+    /* background-color: gray; */
+    /* background:linear-gradient(
+      90deg,
+      red 0%,
+      rgb(172, 73, 73) 30%,
+      rgb(245, 175, 175) 100%
+    ); */
+    background-color: black;
+    /* border: 0px solid white;
+    border-radius: 10px;
+    border-bottom: none;
+    border-right: none;
+    border-left: none; */
+    z-index: 2;
+    opacity: 0;
+    animation: menuappear 0.5s ease 8.5s 1 normal forwards;
+  }
+  
+  @keyframes menuappear{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  
+  .menuoption {
+    height: 86%;
+    width: 15%;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    margin-top: 5px;
+    /* animation: newsappear 0.5s ease 8.5s 1 normal forwards; */
+    /* transform: scale(0); */
+  }
+  .menuoption p {
+    font-family: "Protest Riot", sans-serif;
+    /* font-size: 20px; */
+    transition: color 0.2s ease;
+    color: white;
+    transition: font-size 0.2s ease;
+    font-size: 20px;
+    text-align: center;
+  }
+  .menuoption:hover {
+    background-color: rgba(241, 62, 62, 0.549);
+  }
+  /* .menuoption:hover p{
+      color: white;
+  } */
+  
+  .news {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-auto-rows: minmax(100px, auto);  
+    gap: 10px;
+    transform: scale(0);
+    animation: newsappear 0.6s ease-out 8.5s 1 normal forwards;
+  }
+  .loadingscreen{
+      grid-column:1/11 ;
+  grid-row: 1/7;   
+   background-color:transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .newsimage{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      transform: scale(1);
+      opacity: 0.5;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+     z-index: 3;
+     background-color: black;
+  
+  }
+  
+  .newsbox:hover .newsimage{
+  opacity: 1;
+  }
+  
+  .newstag {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+      width: 70%;
+      opacity: 1;
+      /* animation: newstextappear 1s linear 6s 1 normal forwards; */
+      transition: top 0.3s ease, left 0.3s ease;
+  }
+  .newsbox:hover .newstag{
+    opacity: 1;
+    font-size: 30px;
+    top:5%;
+    left: 50%;
+    width: 80%;
+    text-align: left;
+  
+    }
+  
+  .tag1{
+      color: rgba(255, 255, 255, 0.804);
+      font-size: 50px;
+  }
+  .tag2{
+      color: rgba(255, 255, 255, 0.804);
+      font-size: 50px;
+  }
+  .tag3{
+      color: rgba(255, 255, 255, 0.804);
+      font-size: 50px;
+  }
+  .tag4{
+    color: rgba(255, 255, 255, 0.804);
+      font-size: 50px;
+  }
+  .tag5{
+    color: rgba(255, 255, 255, 0.804);
+      font-size: 50px;
+  }
+  .newsbox{
+    height: 100%;
+    width: 100%;
+  }
+  .news1 {
+    grid-column: 1/6;
+    grid-row: 1/5;
+    /* background-color: aqua; */
+    position: relative;
+  
+  }
+  
+  .news2 {
+    grid-column: 6/11;
+    grid-row: 1/4;
+    /* background-color: red; */
+    position: relative;
+  
+  }
+  .end{
+    grid-column: 1/11;
+    grid-row: 8/9
+  }
+  /* .news4 {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    background-color: blue;
+    position: relative;
+  
+  }
+  
+  .news3 {
+      grid-column: 3/4;
+      grid-row: 3/6;
+      background-color: blanchedalmond;
+      position: relative;
+  
+    } */
+  .news3{
+      grid-column: 6/11;
+      grid-row: 4/8;
+      /* background-color: gold; */
+      position: relative;
+  
+  }
+  .news4{
+      grid-column: 1/6;
+      grid-row: 5/8;
+      /* background-color: gold; */
+      position: relative;
+  
+  }
+  
+  .news5{
+    grid-column: 1/7;
+    grid-row: 8/11;
+    /* background-color: gold; */
+    position: relative;
+  
+  }
+  
+  .loader {
+      border: 5px solid rgba(0, 0, 0, 0.1); /* Light grey border */
+      border-radius: 50%; /* Make it round */
+      border-top: 5px solid #db3434a6; /* Blue border */
+      width: 70px; /* Size */
+      height: 70px; /* Size */
+      animation: spin 2s linear  infinite; /* Animation */
+      display: none;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  
+  
+  
+  @keyframes textdisappear {
+    0% {
+      font-size: 100px;
+      opacity: 1;
+    }
+    60% {
+      font-size: 100px;
+      opacity: 0;
+    }
+  
+    100% {
+      font-size: 0px;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes dotappear {
+    0% {
+      font-size: 75px;
+      opacity: 0;
+    }
+  
+    100% {
+      font-size: 75px;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes newsappear{
+      0%{
+          transform: scale(0);
+      }
+  
+      100%{
+          transform: scale(1);
+      }
+  }
+  
+  
+  @keyframes newstextappear{
+    0%{
+       opacity: 0;
+    }
+  
+    100%{
+        opacity: 1;
+    }
+  }
+  @keyframes reposition{
+    0%{
+      top: 110%;
+      left: 50%;
+      font-size: 100px;
+    }
+    100%{
+      top: -30%;
+      left: 50%;
+      font-size: 75px;
+    }
+  }
+  
+  @keyframes logoappear{
+    0%{
+      opacity: 0;
+    }
+  
+    100%{
+      opacity: 1;
+    }
+  }
+  
+  @keyframes colourchange {
+    0%{
+      color: white;
+    }
+    100%{
+      color: red;
+    }
+    
+  }
+  
+  @keyframes titletextappear{
+    0%{
+      transform: translate(-50%,0%)scale(0.8);
+      opacity: 0;
+    }
+  
+    100%{
+      transform: translate(-50%,0%)scale(1);
+      opacity: 1;
+    }
+  }
+  
+  
+  
   
 }
 
-@keyframes titletextappear{
-  0%{
-    transform: translate(-50%,0%)scale(0.8);
-    opacity: 0;
-  }
 
-  100%{
-    transform: translate(-50%,0%)scale(1);
+ 
+@media screen and (min-width:300px) and (max-width:500px){
+    .maincontent{
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+      position: absolute;
+        top: 0%;
+        left: 0%;
+        /* transform: translate(-50%,-50%); */
+    
+        display: grid;
+        grid-template-rows: 170px 1fr;
+    
+    }
+    .titlebar {
+      grid-row: 1/2;
+      width: 100%;
+      /* display: flex;
+      justify-content: flex-start;
+      align-items: center; */
+      gap: 10px;
+      /* background:linear-gradient(
+        90deg,
+        red 0%,
+        rgb(172, 73, 73) 30%,
+        rgb(245, 175, 175) 100%
+      ); */
+      background-color: black;
+      position: relative;
+      
+    }
+    
+    .dot {
+      animation: dotappear 0.9s ease 7.1s 1 normal forwards;
+      opacity: 0;
+      color: white;
+      font-size: 75px;
+    }
+    
+    .fmactitle  {
+      font-size: 25px;
+      /* font-family: 'Diphylleia', serif; */
+      /* font-family: 'Permanent Marker', cursive; */
+      font-family: "Protest Riot", sans-serif;
+      /* font-family: 'Merriweather', serif; */
+      font-family: 'Montserrat', sans-serif;
+    
+      position: absolute;
+      left: 50%;
+      top: 110%;
+      white-space: nowrap;
+      transform: translate(-50%,0%);
+      animation: reposition 1.5s ease 3.5s 1 normal forwards ;
+      z-index: 5;
+      opacity: 1;
+    }
+    @keyframes textappear{
+      0%{
+        opacity: 0;
+      }
+      60%{
+        opacity: 1;
+      }
+      100%{
+        opacity: 1;
+      }
+    }
+    .hightlighttext {
+      color: white;
+      animation: colourchange 0.7s ease 1s 1 normal forwards;
+    }
+    
+    .disappearingtext {
+      color: white;
+      animation: textdisappear 1.3s ease 2s 1 normal forwards;
+    }
+    .fmaclogo {
+      height: 180px;
+      width: 200px;
+      object-fit: cover;
+      position: absolute;
+      left: 0%;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 0;
+      animation: logoappear 0.4s ease 8.5s 1 normal forwards;
+      display: none;
+    }
+    .date{
+      position: absolute;
+      top:50%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+    }
+    .date p{
+      font-size: 20px;
+      color: white;
+      font-family: 'Diphylleia', serif;
+      transform: scale(1);
+      opacity: 0;
+      animation: logoappear 0.7s ease 5.3s 1 normal forwards;
+    }
+    .contentbox {
+      grid-row: 3/4;
+      background-color: black;
+      display: grid;
+      grid-template-rows: 30px 10px 1fr;
+      grid-template-columns: 0px 1fr 0px;
+    }
+    
+    .menubar {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      grid-column: 2/3;
+      grid-row: 1/2;
+      width: 100%;
+      /* background-color: gray; */
+      /* background:linear-gradient(
+        90deg,
+        red 0%,
+        rgb(172, 73, 73) 30%,
+        rgb(245, 175, 175) 100%
+      ); */
+      background-color: black;
+      /* border: 0px solid white;
+      border-radius: 10px;
+      border-bottom: none;
+      border-right: none;
+      border-left: none; */
+      z-index: 2;
+      opacity: 0;
+      animation: menuappear 0.5s ease 5.2s 1 normal forwards;
+    }
+    
+    @keyframes menuappear{
+      0%{
+        opacity: 0;
+      }
+      100%{
+        opacity: 1;
+      }
+    }
+    
+    .menuoption {
+      height: 86%;
+      width: 15%;
+      background-color: black;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+      margin-top: 5px;
+      /* animation: newsappear 0.5s ease 8.5s 1 normal forwards; */
+      /* transform: scale(0); */
+    }
+    .menuoption p {
+      font-family: "Protest Riot", sans-serif;
+      transition: color 0.2s ease;
+      color: white;
+      text-align: center;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 13px;
+    }
+    /* .menuoption:hover {
+      background-color: rgba(241, 62, 62, 0.549);
+    } */
+    /* .menuoption:hover p{
+        color: white;
+    } */
+    
+    .news {
+      grid-column: 2/3;
+      grid-row: 3/4;
+      background-color: black;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-auto-rows: minmax(100px, auto);  
+      gap: 10px;
+      transform: scale(0);
+      animation: newsappear 0.6s ease-out 5.2s 1 normal forwards;
+    }
+    .loadingscreen{
+        grid-column:1/2 ;
+    grid-row: 1/7;   
+     background-color:transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .newsimage{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        transform: scale(1);
+        opacity: 1;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+       z-index: 3;
+       background-color: black;
+    
+    }
+    
+    .newsbox:hover .newsimage{
     opacity: 1;
+    }
+    
+    .newstag {
+        position: absolute;
+        top: 22%;
+        left: 27%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        width: 50%;
+        opacity: 1;
+        /* animation: newstextappear 1s linear 6s 1 normal forwards; */
+        transition: top 0.3s ease, left 0.3s ease;
+        text-align: left;
+        font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  color: azure;
+
+    }
+   
+    
+   
+    .newsbox{
+      height: 100%;
+      width: 100%;
+    }
+    .news1 {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      /* background-color: aqua; */
+      position: relative;
+    
+    }
+    
+    .news2 {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      /* background-color: red; */
+      position: relative;
+    
+    }
+    /* .end{
+      grid-column: 1/2;
+      grid-row: 3/4;
+    } */
+    /* .news4 {
+      grid-column: 3/4;
+      grid-row: 1/3;
+      background-color: blue;
+      position: relative;
+    
+    }
+    
+    .news3 {
+        grid-column: 3/4;
+        grid-row: 3/6;
+        background-color: blanchedalmond;
+        position: relative;
+    
+      } */
+    .news3{
+      grid-column: 1/2;
+        grid-row: 3/4;
+        /* background-color: gold; */
+        position: relative;
+    
+    }
+    .news4{
+      grid-column: 1/2;
+        grid-row: 4/5;
+        /* background-color: gold; */
+        position: relative;
+    
+    }
+    
+    .news5{
+      grid-column: 1/2;
+      grid-row: 5/6;
+      /* background-color: gold; */
+      position: relative;
+    
+    }
+    
+    .loader {
+        border: 5px solid rgba(0, 0, 0, 0.1); /* Light grey border */
+        border-radius: 50%; /* Make it round */
+        border-top: 5px solid #db3434a6; /* Blue border */
+        width: 70px; /* Size */
+        height: 70px; /* Size */
+        animation: spin 2s linear  infinite; /* Animation */
+        display: none;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    
+    
+    
+    @keyframes textdisappear {
+      0% {
+        font-size: 25px;
+        opacity: 1;
+      }
+      60% {
+        font-size: 25px;
+        opacity: 0;
+      }
+    
+      100% {
+        font-size: 0px;
+        opacity: 0;
+      }
+    }
+    
+    
+    
+    @keyframes newsappear{
+        0%{
+            transform: scale(0);
+        }
+    
+        100%{
+            transform: scale(1);
+        }
+    }
+    
+    
+    @keyframes newstextappear{
+      0%{
+         opacity: 0;
+      }
+    
+      100%{
+          opacity: 1;
+      }
+    }
+    @keyframes reposition{
+      0%{
+        top: 110%;
+        left: 50%;
+        font-size: 25px;
+      }
+      100%{
+        top: -15%;
+        left: 50%;
+        font-size: 45px;
+      }
+    }
+    
+    @keyframes logoappear{
+      0%{
+        opacity: 0;
+      }
+    
+      100%{
+        opacity: 1;
+      }
+    }
+    
+    @keyframes colourchange {
+      0%{
+        color: white;
+      }
+      100%{
+        color: red;
+      }
+      
+    }
+    
+    @keyframes titletextappear{
+      0%{
+        transform: translate(-50%,0%)scale(0.8);
+        opacity: 0;
+      }
+    
+      100%{
+        transform: translate(-50%,0%)scale(1);
+        opacity: 1;
+      }
+    }
   }
-}
+  
