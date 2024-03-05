@@ -556,28 +556,27 @@ p {
     }
     .hightlighttext {
       color: white;
-      animation: colourchange 0.7s ease 1s 1 normal forwards;
+      animation: colourchange 1s ease 1s 1 normal forwards;
     }
     
     .disappearingtext {
       color: white;
-      animation: textdisappear 1.3s ease 2s 1 normal forwards;
+      animation: textdisappear 1.3s ease 1.8s 1 normal forwards;
     }
     .fmaclogo {
-      height: 180px;
+      height: 100px;
       width: 200px;
       object-fit: cover;
       position: absolute;
-      left: 0%;
-      top: 50%;
-      transform: translateY(-50%);
+      left: 50%;
+      top: -5%;
+      transform: translateX(-50%);
       opacity: 0;
-      animation: logoappear 0.4s ease 8.5s 1 normal forwards;
-      display: none;
+      animation: logoappear 0.4s ease 5.3s 1 normal forwards;
     }
     .date{
       position: absolute;
-      top:50%;
+      top:65%;
       left: 50%;
       transform: translateX(-50%);
       display: flex;
@@ -804,10 +803,10 @@ p {
         font-size: 25px;
         opacity: 1;
       }
-      60% {
+      /* 60% {
         font-size: 25px;
         opacity: 0;
-      }
+      } */
     
       100% {
         font-size: 0px;
@@ -844,7 +843,7 @@ p {
         font-size: 25px;
       }
       100%{
-        top: -15%;
+        top: 1%;
         left: 50%;
         font-size: 45px;
       }
