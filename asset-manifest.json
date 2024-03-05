@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fmac/static/css/main.336aa50e.css",
+    "main.js": "/fmac/static/js/main.d76a0b71.js",
+    "index.html": "/fmac/index.html",
+    "main.336aa50e.css.map": "/fmac/static/css/main.336aa50e.css.map",
+    "main.d76a0b71.js.map": "/fmac/static/js/main.d76a0b71.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.336aa50e.css",
+    "static/js/main.d76a0b71.js"
+  ]
+}
