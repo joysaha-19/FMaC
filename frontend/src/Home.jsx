@@ -85,7 +85,7 @@ export default function Home() {
   else{
    const a=   setTimeout(()=>{
         localStorage.setItem("loaded","1");
-            return ()=>clearTimeout(a);
+            return ()=>clearTimeout(a)
       },11000);
      
   }
@@ -94,7 +94,7 @@ export default function Home() {
 
     useEffect(()=>{
 let t;
-  if(localStorage.getItem("loaded")==1)
+  if(localStorage.getItem("loaded")==="1")
   t=1;
 else
 t=11000;
@@ -114,7 +114,7 @@ t=11000;
   function handleshiftcontent(index) {
     const newArray = optionsarray.map((_, i) => i === index);
     setoptionsarray(newArray);
-    navigate('./1');
+    navigate('./films');
   }
   const videoRef = useRef(null);
 
