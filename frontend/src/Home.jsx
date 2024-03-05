@@ -8,7 +8,19 @@ export default function Home() {
   const navigate= useNavigate();
   const options = ["HOME", "FILMS", "AWARDS", "ABOUT US", "CONTACT US"];
   const reelref=useRef(null);
-    const mainref=useRef(null);
+  const mainref=useRef(null);
+  const fmactitleref=useRef(null);
+  const disappearingtextref1=useRef(null);
+  const highlighttextref1=useRef(null);
+  const disappearingtextref2=useRef(null);
+  const highlighttextref2=useRef(null);
+  const disappearingtextref3=useRef(null);
+  const highlighttextref3=useRef(null);
+  const highlighttextref4=useRef(null);
+  const fmaclogoref=useRef(null);
+  const menubarref=useRef(null);
+  const newsref=useRef(null);
+  const dateref=useRef(null);
   //states
   const [optionsarray, setoptionsarray] = useState([
     true,
@@ -17,15 +29,76 @@ export default function Home() {
     false,
     false,
   ]);
-  const [loading, setloading] = useState(true);
-
-  //Timeouts/intervals
+  const loading=false;
+  
   useEffect(() => {
-    setTimeout(() => {
-      setloading(false);
-    }, 4000);
-   
-    setTimeout(()=>{
+    const handleBeforeUnload = (event) => {
+      localStorage.removeItem('loaded');
+    
+    };
+    window.addEventListener('beforeunload', handleBeforeUnload);
+    return () => {
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+    };
+  }, []);
+ useEffect(()=>{
+  if(localStorage.getItem("loaded")==="1")
+  {
+  
+      fmactitleref.current.style.animation='none';
+      fmactitleref.current.style.top='-30%'
+      fmactitleref.current.style.left='50%'
+      fmactitleref.current.style.opacity=1;
+      fmactitleref.current.style.fontSize='75px';
+
+      disappearingtextref1.current.style.animation='none';
+      disappearingtextref1.current.style.fontSize=0;
+      disappearingtextref2.current.style.animation='none';
+      disappearingtextref2.current.style.fontSize=0;
+      disappearingtextref3.current.style.animation='none';
+      disappearingtextref3.current.style.fontSize=0;
+    
+
+      highlighttextref1.current.style.animation='none';
+      highlighttextref1.current.style.color='red';
+      highlighttextref2.current.style.animation='none';
+      highlighttextref2.current.style.color='red';
+      highlighttextref3.current.style.animation='none';
+      highlighttextref3.current.style.color='red';
+      highlighttextref4.current.style.animation='none';
+      highlighttextref4.current.style.color='red';
+
+      fmaclogoref.current.style.animation='none';
+      fmaclogoref.current.style.opacity=1;
+
+      menubarref.current.style.animation='none';
+      menubarref.current.style.opacity=1;
+
+      newsref.current.style.animation='none';
+      newsref.current.style.transform='scale(1)';
+
+      videoRef.current.style.display='none';
+
+      dateref.current.style.animation='none';
+      dateref.current.style.opacity=1;
+    }
+  else{
+   const a=   setTimeout(()=>{
+        localStorage.setItem("loaded","1");
+            return ()=>clearTimeout(a);
+      },11000);
+     
+  }
+ });
+
+
+    useEffect(()=>{
+let t;
+  if(localStorage.getItem("loaded")==1)
+  t=1;
+else
+t=11000;
+   const a= setTimeout(()=>{
      if(reelref.current)
      {
       reelref.current.style.display='none';
@@ -34,8 +107,8 @@ export default function Home() {
      {
       mainref.current.style.overflowY = "scroll";
      }
-    },11000)
-  });
+    },t)
+    return ()=>clearTimeout(a)  });
   //functions
 
   function handleshiftcontent(index) {
@@ -72,30 +145,31 @@ export default function Home() {
           src="./pics/fmaclogos/bdome.webp"
           alt="titlelogo"
           className="fmaclogo"
+          ref={fmaclogoref}
         />
 
-        <div className="fmactitle">
+        <div className="fmactitle" ref={fmactitleref}>
           <p>
             <strong>
-            <span className="hightlighttext">
+            <span className="hightlighttext" ref={highlighttextref1}>
               F<span className="dot"></span>
             </span>
-            <span className="disappearingtext">ilm </span>
-            <span className="hightlighttext">
+            <span className="disappearingtext" ref={disappearingtextref1}>ilm </span>
+            <span className="hightlighttext" ref={highlighttextref2}>
               Ma<span className="dot"></span>
             </span>
-            <span className="disappearingtext">king </span>
-            <span className="hightlighttext">C</span>
-            <span className="disappearingtext">lub</span>
-            <span className="hightlighttext">&nbsp;BITS GOA</span>
+            <span className="disappearingtext" ref={disappearingtextref2}>king </span>
+            <span className="hightlighttext"  ref={highlighttextref3}>C</span>
+            <span className="disappearingtext" ref={disappearingtextref3}>lub</span>
+            <span className="hightlighttext"  ref={highlighttextref4}>&nbsp;BITS GOA</span>
             </strong>
           </p>
           {/* <p>Established 2016...</p> */}
         </div>
-        <div className="date"><p>Established 2016...</p></div>
+        <div className="date" ><p ref={dateref}>Established 2016...</p></div>
       </div>
       <div className="contentbox">
-        <div className="menubar">
+        <div className="menubar" ref={menubarref}>
           {options.map((value, index) => {
             return (
               <div key={index}
@@ -114,7 +188,7 @@ export default function Home() {
             );
           })}
         </div>
-        <div className="news">
+        <div className="news" ref={newsref}>
           {!loading ? (
             <>
               <div className="news1">

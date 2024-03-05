@@ -153,18 +153,18 @@ function handleclosedescription(){
   return (
     <div className="parentfilmsparent">
     <div className="descriptionbox" ref={descriptionref}>
-          <img src={descriptionimage} alt="descriptionimage" loading="lazy"></img>
+          <img src={descriptionimage} alt="descriptionimage" ></img>
           <div className="transparentcover">
           <div className="descriptionplay">
                       <p>{"Play "}</p> 
-                     <img src="./youtube.svg" alt="youtubeicon" loading="lazy"></img>
+                     <img src="./youtube.svg" alt="youtubeicon" ></img>
                           </div>
           <div className="logobox">
                         <img
                           className="logoimage"
                           alt="infoimage"
                           src={descriptionlogo}
-                          loading="lazy"
+                          
                         ></img>
                       </div>
             <div className="infotext">
