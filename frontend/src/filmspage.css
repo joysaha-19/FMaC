@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
+img {
+  loading: lazy;
+}
 a:link {
   color: white;
   text-decoration: none;
@@ -8,7 +10,7 @@ a:visited {
   color: white;
   text-decoration: none;
 }
-.parentfilmsparent{
+.parentfilmsparent {
   height: 100vh;
   width: 100vw;
   background-color: black;
@@ -18,7 +20,7 @@ a:visited {
   height: 100vh;
   width: 100vw;
   position: absolute;
-  top:0%;
+  top: 0%;
   left: 0%;
   /* display: grid;
     grid-template-columns: 1fr;
@@ -27,9 +29,9 @@ a:visited {
   overflow-y: scroll;
   opacity: 1;
   transition: opacity 0.2s ease;
-z-index: 1;
+  z-index: 1;
 }
-.transparentcoverparent{
+.transparentcoverparent {
   position: absolute;
   top: 0%;
   left: 0%;
@@ -301,12 +303,12 @@ z-index: 1;
   animation: pullup 0.3s ease 0.1s 1 normal both;
 }
 @keyframes pullup {
-  0%{
-      top:100%;
-      opacity: 0;
+  0% {
+    top: 100%;
+    opacity: 0;
   }
-  100%{
-    top:50%;
+  100% {
+    top: 50%;
     opacity: 1;
   }
 }
@@ -315,7 +317,6 @@ z-index: 1;
   height: 100%;
   width: 100%;
   object-fit: cover;
-  
 }
 
 .transparentcover {
@@ -326,14 +327,14 @@ z-index: 1;
   top: 0%;
   left: 0%;
 }
-.transparentcover .logobox img{
+.transparentcover .logobox img {
   object-fit: contain;
   position: absolute;
   top: 6%;
   height: 80%;
   width: 90%;
 }
-.descriptionplay{
+.descriptionplay {
   position: absolute;
   top: 40%;
   left: 1%;
@@ -351,12 +352,12 @@ z-index: 1;
   border-radius: 10px;
   transition: background-color 0.1s ease;
 }
-.descriptionplay img{
+.descriptionplay img {
   height: 100%;
   width: 40%;
   object-fit: contain;
 }
-.descriptionplay:hover{
+.descriptionplay:hover {
   background-color: azure;
 }
 .infotext {
@@ -369,7 +370,7 @@ z-index: 1;
   display: grid;
   grid-template-rows: 3fr 1fr;
 }
-.plotinfo{
+.plotinfo {
   grid-row: 1/2;
   background-color: transparent;
   display: flex;
@@ -392,17 +393,16 @@ z-index: 1;
   font-style: normal;
   font-size: large;
   color: rgba(255, 255, 255, 0.649);
-
 }
 .directorsname {
   grid-row: 1/2;
   display: flex;
- 
+
   background-color: transparent;
 }
 .castname {
   grid-row: 2/3;
- 
+
   background-color: transparent;
 }
 .filmsarea {
