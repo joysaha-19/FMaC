@@ -63,7 +63,7 @@ useEffect(()=>{
     }
    },2000)
 }
-
+  if(window.innerWidth>500)
   playvideo();
   return () => {
     clearTimeout(playvideo.timeout);
