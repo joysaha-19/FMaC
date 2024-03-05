@@ -224,11 +224,7 @@ export default function Home() {
         }
       }
     else{
-     const a=   setTimeout(()=>{
-          sessionStorage.setItem("loaded","1");
-              return ()=>clearTimeout(a)
-        },11000);
-       
+    sessionStorage.setItem("loaded","1")
     }
 
   }
