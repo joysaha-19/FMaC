@@ -1,4 +1,7 @@
+
 # FMaC Website
+
+The website is currently hosted at [https://fmacbitsgoa.netlify.app/](https://fmacbitsgoa.netlify.app/).
 
 ## Description
 
