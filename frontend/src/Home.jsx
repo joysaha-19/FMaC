@@ -60,7 +60,7 @@ export default function Home() {
   return (
     <div className="parenthome" ref={mainref}>
         <div className="filmreels1" ref={reelref}>
-        <video ref={videoRef} width="110%" height="110%" autoPlay muted >
+        <video ref={videoRef} width="110%" height="110%" autoPlay muted  style={{objectFit:'cover'}}>
           <source src="./introdf1.mp4" type="video/mp4" />
           <source src="./movie.ogg" type="video/ogg" />
           Your browser does not support the video tag.

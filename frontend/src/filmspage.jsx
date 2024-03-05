@@ -43,32 +43,33 @@ export default function Rough() {
 
   const scrollref = useRef(null);
   
-    function playvideo(){
-      let index=Math.abs(prevsugg);
-      if(refs.current[index]&&prevsugg!=currsugg)
-      {
-        refs.current[index].style.opacity=0;
-        refs.current[index].currentTime = 0;
-        refs.current[index].pause();
-     }
-     let index1=Math.abs(currsugg);
-     playvideo.timeout=setTimeout(()=>{
-      if(refs.current[index1]){
-      refs.current[index1].style.opacity=1;
-      refs.current[index1].currentTime = 0;
-      refs.current[index1].play();
-      }
-     },2000)
-  }
-
+   
  
 useEffect(()=>{
+  function playvideo(){
+    let index=Math.abs(prevsugg);
+    if(refs.current[index]&&prevsugg!==currsugg)
+    {
+      refs.current[index].style.opacity=0;
+      refs.current[index].currentTime = 0;
+      refs.current[index].pause();
+   }
+   let index1=Math.abs(currsugg);
+   playvideo.timeout=setTimeout(()=>{
+    if(refs.current[index1]){
+    refs.current[index1].style.opacity=1;
+    refs.current[index1].currentTime = 0;
+    refs.current[index1].play();
+    }
+   },2000)
+}
+
   playvideo();
   return () => {
     clearTimeout(playvideo.timeout);
   };
 
-},[currsugg])
+},[currsugg,prevsugg])
 
  
 
@@ -156,7 +157,7 @@ function handleclosedescription(){
           <div className="transparentcover">
           <div className="descriptionplay">
                       <p>{"Play "}</p> 
-                     <img src="./youtube.svg"></img>
+                     <img src="./youtube.svg" alt="youtubeicon"></img>
                           </div>
           <div className="logobox">
                         <img
@@ -234,7 +235,7 @@ function handleclosedescription(){
                       </div>
                       <div className="otherinfo">
                         {value["trailer"] && (
-                          <a href={value["trailer_link"]} target="_blank">
+                          <a href={value["trailer_link"]} target="_blank"  rel="noopener noreferrer">
                             <div className="youtubebutton trailer">
                               <p>Watch Trailer on</p>
 
@@ -246,7 +247,7 @@ function handleclosedescription(){
                             </div>
                           </a>
                         )}{" "}
-                        <a href={value["movie_link"]} target="_blank">
+                        <a href={value["movie_link"]} target="_blank"  rel="noopener noreferrer">
                           <div className="youtubebutton movie">
                             <p>Watch Movie on</p>
                             <img
@@ -367,7 +368,7 @@ function handleclosedescription(){
                        <img className="infobutton" alt="info" src="./pics/utils/info.png"></img>
                        </div>
                        <div className="listlogo">
-                        <img src={value1["logo"]}></img>
+                        <img src={value1["logo"]} alt="listmovielogo"></img>
                        </div>
                       </div>
                      )
