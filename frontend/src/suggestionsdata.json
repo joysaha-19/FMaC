@@ -1,8 +1,8 @@
 [
   {
-    "image": "./pics/newsphotos/zeher.png",
+    "image": "./pics/newsphotos/zeher.webp",
     "video": "./vids/minis/zeher.mp4",
-    "logo": "./pics/logos/zeher.png",
+    "logo": "./pics/logos/zeher.webp",
     "synopsis": "In a desperate bid to find a paper leaker, two students embark on an absurd quest. However, their plan soon takes an unexpected turn. Offering a comical blend of mystery and moral ambiguity, FMaC presents to you: 'ZEHER.'",
     "achievement":false,
     "trailer":true,
@@ -12,21 +12,21 @@
    
   },
   {
-    "image": "./pics/newsphotos/rakshasa.png",
+    "image": "./pics/newsphotos/rakshasa.webp",
     "video": "./vids/minis/rakshasa.mp4",
-    "logo": "./pics/logos/rakshasa.png",
+    "logo": "./pics/logos/rakshasa.webp",
     "synopsis": "'हर रावण की कहानी में एक चीज निश्चित है.....उसका अंत' Two college friends get involved in a crime and must safeguard themselves from legal actions. As time ticks their friendship and morality is tested uncovering some dark truths along the journey.",
-    "achievement":true,
+    "achievement":false,
     "trailer":true,
-    "achievement_laural":"./pics/laurals/jiff.png",
+    "achievement_laural":"./pics/laurals/jiff.webp",
     "trailer_link":"https://www.youtube.com/watch?v=hg3YkJYvOy0&t=365s",
     "movie_link":"https://www.youtube.com/watch?v=hg3YkJYvOy0&t=365s",
     "cloudurl":"https://storage.googleapis.com/fmac_website_videos/suggestion_videos/rakshasa.mp4"
   },
   {
-    "image": "./pics/newsphotos/sorry.jpg",
+    "image": "./pics/newsphotos/sorry.webp",
     "video": "./vids/minis/sorry.mp4",
-    "logo": "./pics/logos/sorry.png",
+    "logo": "./pics/logos/sorry.webp",
     "synopsis": "How far do our mistakes define us? 'sorry' explores the ugly aftermath of a broken friendship in a tale told visually. This film features original music made by members of the Filmmaking Club.",
     "achievement":false,
     "trailer":false,

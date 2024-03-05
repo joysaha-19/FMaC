@@ -25,11 +25,11 @@ export default function Rough() {
   const menubarref = useRef(null);
   const descriptionref=useRef(null);
   const parentref=useRef(null);
-  const [soundimage, setsoundimage] = useState("./pics/utils/soundoff.png");
+  const [soundimage, setsoundimage] = useState("./pics/utils/soundoff.webp");
   function changesound() {
-    if (soundimage === "./pics/utils/soundoff.png")
-      setsoundimage("./pics/utils/soundon.png");
-    else setsoundimage("./pics/utils/soundoff.png");
+    if (soundimage === "./pics/utils/soundoff.webp")
+      setsoundimage("./pics/utils/soundon.webp");
+    else setsoundimage("./pics/utils/soundoff.webp");
   }
 
   const refs = useRef([]);
@@ -153,17 +153,18 @@ function handleclosedescription(){
   return (
     <div className="parentfilmsparent">
     <div className="descriptionbox" ref={descriptionref}>
-          <img src={descriptionimage} alt="descriptionimage"></img>
+          <img src={descriptionimage} alt="descriptionimage" loading="lazy"></img>
           <div className="transparentcover">
           <div className="descriptionplay">
                       <p>{"Play "}</p> 
-                     <img src="./youtube.svg" alt="youtubeicon"></img>
+                     <img src="./youtube.svg" alt="youtubeicon" loading="lazy"></img>
                           </div>
           <div className="logobox">
                         <img
                           className="logoimage"
                           alt="infoimage"
                           src={descriptionlogo}
+                          loading="lazy"
                         ></img>
                       </div>
             <div className="infotext">
@@ -199,6 +200,7 @@ function handleclosedescription(){
                         className="lauralimage"
                         src={value["achievement_laural"]}
                         alt="laural"
+                        loading="lazy"
                       ></img>
                     </div>
                   )}
@@ -207,6 +209,7 @@ function handleclosedescription(){
                       className="suggimage"
                       alt="suggimage"
                       src={value["image"]}
+                      loading="lazy"
                     ></img>
                     <video
                       className="suggvideo"
@@ -214,7 +217,7 @@ function handleclosedescription(){
                       height="100%"
                       ref={(el) => (refs.current[index] = el)}
                       onEnded={() => handleVideoEnd(index)}
-                      muted={soundimage === "./pics/utils/soundoff.png"}
+                      muted={soundimage === "./pics/utils/soundoff.webp"}
                     >
                       <source src={value["video"]} type="video/mp4" />
                       {/* <source src="./movie.ogg" type="video/ogg" /> */}
@@ -228,6 +231,7 @@ function handleclosedescription(){
                           className="logoimage"
                           alt="suggimage"
                           src={value["logo"]}
+                          loading="lazy"
                         ></img>
                       </div>
                       <div className="synopsis">
@@ -243,6 +247,7 @@ function handleclosedescription(){
                                 src="./youtube.svg"
                                 alt="Description of the icon"
                                 className="youtube"
+                                loading="lazy"
                               />
                             </div>
                           </a>
@@ -254,6 +259,7 @@ function handleclosedescription(){
                               src="./youtube.svg"
                               alt="Description of the icon"
                               className="youtube"
+                              loading="lazy"
                             />
                           </div>
                         </a>
@@ -266,6 +272,7 @@ function handleclosedescription(){
                         src={soundimage}
                         onClick={changesound}
                         alt="sound"
+                        loading="lazy"
                       ></img>
                     </div>
                   </div>
@@ -336,13 +343,15 @@ function handleclosedescription(){
             <img
               className="searchicon"
               alt="searchicon"
-              src="./pics/utils/searchicon.png"
+              src="./pics/utils/searchicon.webp"
+              loading="lazy"
             ></img>
             <input type="text" className="searchtext"></input>
             <img
               className="sort"
               alt="sorticon"
-              src="./pics/utils/sort.png"
+              src="./pics/utils/sort.webp"
+              loading="lazy"
             ></img>
           </div>
         </div>
@@ -363,12 +372,12 @@ function handleclosedescription(){
               listindex[index].map((value1,index1)=>{
                      return(
                       <div className="listelement" onClick={(e)=>showFilmInfo(index,index1)} key={index1} >
-                        <img className="listelimage" src={value1["image"]} alt="listimage"></img>
+                        <img className="listelimage" src={value1["image"]} alt="listimage" loading="lazy"></img>
                         <div className="infobar">
-                       <img className="infobutton" alt="info" src="./pics/utils/info.png"></img>
+                       <img className="infobutton" alt="info" src="./pics/utils/info.webp" loading="lazy"></img>
                        </div>
                        <div className="listlogo">
-                        <img src={value1["logo"]} alt="listmovielogo"></img>
+                        <img src={value1["logo"]} alt="listmovielogo" loading="lazy"></img>
                        </div>
                       </div>
                      )

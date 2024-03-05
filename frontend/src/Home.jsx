@@ -69,7 +69,7 @@ export default function Home() {
         <div className="maincontent">
       <div className="titlebar">
         <img
-          src="./pics/fmaclogos/bdome.png"
+          src="./pics/fmaclogos/bdome.webp"
           alt="titlelogo"
           className="fmaclogo"
         />
@@ -120,7 +120,7 @@ export default function Home() {
               <div className="news1">
                 <div className="newsbox">
                   <img
-                    src="./pics/newsphotos/rakshasa.png"
+                    src="./pics/newsphotos/rakshasa.webp"
                     className="newsimage"
                     alt="newsimage"
                   ></img>
@@ -134,7 +134,7 @@ export default function Home() {
               <div className="news2">
                 <div className="newsbox">
                   <img
-                    src="./pics/newsphotos/sheesha.png"
+                    src="./pics/newsphotos/sheesha.webp"
                     className="newsimage"
                     alt="newsimage"
                   ></img>
@@ -148,7 +148,7 @@ export default function Home() {
               <div className="news3">
                 <div className="newsbox">
                   <img
-                    src="./pics/newsphotos/zeher.png"
+                    src="./pics/newsphotos/zeher.webp"
                     className="newsimage"
                     alt="newsimage"
                   ></img>
@@ -162,7 +162,7 @@ export default function Home() {
               <div className="news4">
                 <div className="newsbox">
                   <img
-                    src="./pics/newsphotos/treasurehunt.png"
+                    src="./pics/newsphotos/treasurehunt.webp"
                     className="newsimage"
                     alt="newsimage"
                   ></img>
@@ -176,7 +176,7 @@ export default function Home() {
               <div className="news5">
                 <div className="newsbox">
                   <img
-                    src="./pics/newsphotos/aaja.png"
+                    src="./pics/newsphotos/aaja.webp"
                     className="newsimage"
                     alt="newsimage"
                   ></img>
