@@ -822,7 +822,7 @@ p {
       }
     
       100% {
-        font-size: 0px;
+        font-size: 0.1px;
         opacity: 0;
         transform: translate(-50%,0%) scale(0);
       }
