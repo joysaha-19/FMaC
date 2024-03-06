@@ -300,11 +300,11 @@ useEffect(() => {
           <p>
             <strong>
             <span className="hightlighttext" ref={highlighttextref1}>
-              F<span className="dot">.</span>
+              F<span className="dot"></span>
             </span>
             <span className="disappearingtext" ref={disappearingtextref1}>ilm </span>
             <span className="hightlighttext" ref={highlighttextref2}>
-              Ma<span className="dot">.</span>
+              Ma<span className="dot"></span>
             </span>
             <span className="disappearingtext" ref={disappearingtextref2}>king </span>
             <span className="hightlighttext"  ref={highlighttextref3}>C</span>
