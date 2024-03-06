@@ -527,7 +527,7 @@ p {
     }
     
     .fmactitle  {
-      font-size: 25px;
+      font-size: 23px;
       /* font-family: 'Diphylleia', serif; */
       /* font-family: 'Permanent Marker', cursive; */
       font-family: "Protest Riot", sans-serif;
@@ -539,7 +539,7 @@ p {
       top: 110%;
       white-space: nowrap;
       transform: translate(-50%,0%);
-      animation: reposition 1.5s ease 4s 1 normal forwards ;
+      animation: reposition 1.5s ease-out 3.3s 1 normal forwards ;
       z-index: 5;
       opacity: 1;
     }
@@ -556,12 +556,12 @@ p {
     }
     .hightlighttext {
       color: white;
-      animation: colourchange 1.5s ease 1s 1 normal forwards;
+      animation: colourchange 1s ease 1s 1 normal forwards;
     }
     
     .disappearingtext {
       color: white;
-      animation: textdisappear 2s ease 1.9s 1 normal forwards;
+      animation: textdisappear 0.8s ease 2s 1 normal forwards;
     }
     .fmaclogo {
       height: 100px;
@@ -800,7 +800,7 @@ p {
     
     @keyframes textdisappear {
       0% {
-        font-size: 25px;
+        font-size: 23px;
         opacity: 1;
       }
       40% {
@@ -840,7 +840,7 @@ p {
       0%{
         top: 110%;
         left: 50%;
-        font-size: 25px;
+        font-size: 23px;
       }
       100%{
         top: 1%;
