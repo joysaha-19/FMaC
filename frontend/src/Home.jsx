@@ -236,28 +236,27 @@ export default function Home() {
 //   };
 // });
 
-    useEffect(()=>{
-let t;
-//   if(sessionStorage.getItem("loaded")==="1")
-//   t=1;
-// else
-// t=11000;
+useEffect(() => {
+  let t;
 
- 
-if(window.innerWidth>=501)
-t=10000;
-else t=6000;
-   const a= setTimeout(()=>{
-     if(reelref.current)
-     {
-      reelref.current.style.display='none';
-     }
-     if(mainref.current)
-     {
+  if (window.innerWidth >= 501) {
+    t = 10000; // 10 seconds for wider screens
+  } else {
+    t = 6000; // 6 seconds for narrower screens
+  }
+
+  const a = setTimeout(() => {
+    if (reelref.current) {
+      reelref.current.style.display = 'none';
+    }
+    if (mainref.current) {
       mainref.current.style.overflowY = "scroll";
-     }
-    },t)
-    return ()=>clearTimeout(a)  });
+    }
+  }, t);
+
+  return () => clearTimeout(a); // Cleanup to clear the timeout
+}, []); // Empty dependency array means this effect runs only once on mount
+
   //functions
 
   function handleshiftcontent(index) {
@@ -340,7 +339,7 @@ else t=6000;
         <div className="news" ref={newsref}>
           {!loading ? (
             <>
-              <div className="news1">
+              <div className="news1" onClick={()=>{handleshiftcontent(1)}}>
                 <div className="newsbox">
                   <img
                     src="./pics/newsphotos/rakshasa.webp"

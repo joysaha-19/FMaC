@@ -620,7 +620,7 @@ p {
       border-bottom: none;
       border-right: none;
       border-left: none; */
-      z-index: 2;
+      z-index: 100;
       opacity: 0;
       animation: menuappear 0.5s ease 5.2s 1 normal forwards;
     }
