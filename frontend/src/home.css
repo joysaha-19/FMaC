@@ -520,10 +520,21 @@ p {
     }
     
     .dot {
-      animation: dotappear 0.9s ease 7.1s 1 normal forwards;
+      animation: dotappear 0.5s ease 1.2s 1 normal forwards;
       opacity: 0;
       color: white;
-      font-size: 75px;
+      font-size: 1px;
+    }
+    @keyframes dotappear {
+      0% {
+        opacity: 0;
+        font-size: 0px;
+      }
+    
+      100% {
+        opacity: 1;
+        font-size: 1px;
+      }
     }
     
     .fmactitle  {
@@ -849,7 +860,7 @@ p {
         font-size: 23px;
       } */
       100%{
-        top: 1%;
+        top: 40%;
         left: 50%;
         transform: translate(-52%,0%) scale(1.8);
       }
