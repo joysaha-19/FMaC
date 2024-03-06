@@ -539,7 +539,7 @@ p {
       top: 110%;
       white-space: nowrap;
       transform: translate(-50%,0%);
-      animation: reposition 2.4s ease 2.2s 1 normal forwards ;
+      animation: reposition 1.5s ease 2.6s 1 normal forwards ;
       z-index: 5;
       opacity: 1;
     }

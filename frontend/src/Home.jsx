@@ -33,229 +33,229 @@ export default function Home() {
   useEffect(() => {
     document.title = "FMaC BITS Goa";
   }, []);
-  useEffect(() => {
-    const handleBeforeUnload = (event) => {
-      sessionStorage.removeItem('loaded');
+//   useEffect(() => {
+//     const handleBeforeUnload = (event) => {
+//       sessionStorage.removeItem('loaded');
     
-    };
-    window.addEventListener('beforeunload', handleBeforeUnload);
-    return () => {
-      window.removeEventListener('beforeunload', handleBeforeUnload);
-    };
-  }, []);
- useEffect(()=>{
-  function adjust(){
-    if(sessionStorage.getItem("loaded")==="1")
-    {
-        if(window.innerWidth>=501)
-        {
-        fmactitleref.current.style.animation='none';
-        fmactitleref.current.style.top='-30%'
-        fmactitleref.current.style.left='50%'
-        fmactitleref.current.style.opacity=1;
-        fmactitleref.current.style.fontSize='75px';
+//     };
+//     window.addEventListener('beforeunload', handleBeforeUnload);
+//     return () => {
+//       window.removeEventListener('beforeunload', handleBeforeUnload);
+//     };
+//   }, []);
+//  useEffect(()=>{
+//   function adjust(){
+//     if(sessionStorage.getItem("loaded")==="1")
+//     {
+//         if(window.innerWidth>=501)
+//         {
+//         fmactitleref.current.style.animation='none';
+//         fmactitleref.current.style.top='-30%'
+//         fmactitleref.current.style.left='50%'
+//         fmactitleref.current.style.opacity=1;
+//         fmactitleref.current.style.fontSize='75px';
   
-        disappearingtextref1.current.style.animation='none';
-        disappearingtextref1.current.style.fontSize=0;
-        disappearingtextref2.current.style.animation='none';
-        disappearingtextref2.current.style.fontSize=0;
-        disappearingtextref3.current.style.animation='none';
-        disappearingtextref3.current.style.fontSize=0;
+//         disappearingtextref1.current.style.animation='none';
+//         disappearingtextref1.current.style.fontSize=0;
+//         disappearingtextref2.current.style.animation='none';
+//         disappearingtextref2.current.style.fontSize=0;
+//         disappearingtextref3.current.style.animation='none';
+//         disappearingtextref3.current.style.fontSize=0;
       
   
-        highlighttextref1.current.style.animation='none';
-        highlighttextref1.current.style.color='red';
-        highlighttextref2.current.style.animation='none';
-        highlighttextref2.current.style.color='red';
-        highlighttextref3.current.style.animation='none';
-        highlighttextref3.current.style.color='red';
-        highlighttextref4.current.style.animation='none';
-        highlighttextref4.current.style.color='red';
+//         highlighttextref1.current.style.animation='none';
+//         highlighttextref1.current.style.color='red';
+//         highlighttextref2.current.style.animation='none';
+//         highlighttextref2.current.style.color='red';
+//         highlighttextref3.current.style.animation='none';
+//         highlighttextref3.current.style.color='red';
+//         highlighttextref4.current.style.animation='none';
+//         highlighttextref4.current.style.color='red';
   
-        fmaclogoref.current.style.animation='none';
-        fmaclogoref.current.style.opacity=1;
+//         fmaclogoref.current.style.animation='none';
+//         fmaclogoref.current.style.opacity=1;
   
-        menubarref.current.style.animation='none';
-        menubarref.current.style.opacity=1;
+//         menubarref.current.style.animation='none';
+//         menubarref.current.style.opacity=1;
   
-        newsref.current.style.animation='none';
-        newsref.current.style.transform='scale(1)';
+//         newsref.current.style.animation='none';
+//         newsref.current.style.transform='scale(1)';
   
-        videoRef.current.style.display='none';
+//         videoRef.current.style.display='none';
   
-        dateref.current.style.animation='none';
-        dateref.current.style.opacity=1;
-        }
-        else{
-        fmactitleref.current.style.animation='none';
-        fmactitleref.current.style.top='1%'
-        fmactitleref.current.style.left='50%'
-        fmactitleref.current.style.opacity=1;
-        fmactitleref.current.style.fontSize='45px';
+//         dateref.current.style.animation='none';
+//         dateref.current.style.opacity=1;
+//         }
+//         else{
+//         fmactitleref.current.style.animation='none';
+//         fmactitleref.current.style.top='1%'
+//         fmactitleref.current.style.left='50%'
+//         fmactitleref.current.style.opacity=1;
+//         fmactitleref.current.style.fontSize='45px';
   
-        disappearingtextref1.current.style.animation='none';
-        disappearingtextref1.current.style.fontSize=0;
-        disappearingtextref2.current.style.animation='none';
-        disappearingtextref2.current.style.fontSize=0;
-        disappearingtextref3.current.style.animation='none';
-        disappearingtextref3.current.style.fontSize=0;
+//         disappearingtextref1.current.style.animation='none';
+//         disappearingtextref1.current.style.fontSize=0;
+//         disappearingtextref2.current.style.animation='none';
+//         disappearingtextref2.current.style.fontSize=0;
+//         disappearingtextref3.current.style.animation='none';
+//         disappearingtextref3.current.style.fontSize=0;
       
   
-        highlighttextref1.current.style.animation='none';
-        highlighttextref1.current.style.color='red';
-        highlighttextref2.current.style.animation='none';
-        highlighttextref2.current.style.color='red';
-        highlighttextref3.current.style.animation='none';
-        highlighttextref3.current.style.color='red';
-        highlighttextref4.current.style.animation='none';
-        highlighttextref4.current.style.color='red';
+//         highlighttextref1.current.style.animation='none';
+//         highlighttextref1.current.style.color='red';
+//         highlighttextref2.current.style.animation='none';
+//         highlighttextref2.current.style.color='red';
+//         highlighttextref3.current.style.animation='none';
+//         highlighttextref3.current.style.color='red';
+//         highlighttextref4.current.style.animation='none';
+//         highlighttextref4.current.style.color='red';
   
-        fmaclogoref.current.style.animation='none';
-        fmaclogoref.current.style.opacity=1;
+//         fmaclogoref.current.style.animation='none';
+//         fmaclogoref.current.style.opacity=1;
   
-        menubarref.current.style.animation='none';
-        menubarref.current.style.opacity=1;
+//         menubarref.current.style.animation='none';
+//         menubarref.current.style.opacity=1;
   
-        newsref.current.style.animation='none';
-        newsref.current.style.transform='scale(1)';
+//         newsref.current.style.animation='none';
+//         newsref.current.style.transform='scale(1)';
   
-        videoRef.current.style.display='none';
+//         videoRef.current.style.display='none';
   
-        dateref.current.style.animation='none';
-        dateref.current.style.opacity=1;
-        }
-      }
-    else{
-      sessionStorage.setItem("loaded","1")
+//         dateref.current.style.animation='none';
+//         dateref.current.style.opacity=1;
+//         }
+//       }
+//     else{
+//       sessionStorage.setItem("loaded","1")
        
-    }
+//     }
 
-  }
+//   }
 
-  adjust();
+//   adjust();
  
- });
+//  });
 
 
- useEffect(() => {
+//  useEffect(() => {
   
-  function adjust(){
-    if(sessionStorage.getItem("loaded")==="1")
-    {
-        if(window.innerWidth>=501)
-        {
-        fmactitleref.current.style.animation='none';
-        fmactitleref.current.style.top='-30%'
-        fmactitleref.current.style.left='50%'
-        fmactitleref.current.style.opacity=1;
-        fmactitleref.current.style.fontSize='75px';
+//   function adjust(){
+//     if(sessionStorage.getItem("loaded")==="1")
+//     {
+//         if(window.innerWidth>=501)
+//         {
+//         fmactitleref.current.style.animation='none';
+//         fmactitleref.current.style.top='-30%'
+//         fmactitleref.current.style.left='50%'
+//         fmactitleref.current.style.opacity=1;
+//         fmactitleref.current.style.fontSize='75px';
   
-        disappearingtextref1.current.style.animation='none';
-        disappearingtextref1.current.style.fontSize=0;
-        disappearingtextref2.current.style.animation='none';
-        disappearingtextref2.current.style.fontSize=0;
-        disappearingtextref3.current.style.animation='none';
-        disappearingtextref3.current.style.fontSize=0;
+//         disappearingtextref1.current.style.animation='none';
+//         disappearingtextref1.current.style.fontSize=0;
+//         disappearingtextref2.current.style.animation='none';
+//         disappearingtextref2.current.style.fontSize=0;
+//         disappearingtextref3.current.style.animation='none';
+//         disappearingtextref3.current.style.fontSize=0;
       
   
-        highlighttextref1.current.style.animation='none';
-        highlighttextref1.current.style.color='red';
-        highlighttextref2.current.style.animation='none';
-        highlighttextref2.current.style.color='red';
-        highlighttextref3.current.style.animation='none';
-        highlighttextref3.current.style.color='red';
-        highlighttextref4.current.style.animation='none';
-        highlighttextref4.current.style.color='red';
+//         highlighttextref1.current.style.animation='none';
+//         highlighttextref1.current.style.color='red';
+//         highlighttextref2.current.style.animation='none';
+//         highlighttextref2.current.style.color='red';
+//         highlighttextref3.current.style.animation='none';
+//         highlighttextref3.current.style.color='red';
+//         highlighttextref4.current.style.animation='none';
+//         highlighttextref4.current.style.color='red';
   
-        fmaclogoref.current.style.animation='none';
-        fmaclogoref.current.style.opacity=1;
+//         fmaclogoref.current.style.animation='none';
+//         fmaclogoref.current.style.opacity=1;
   
-        menubarref.current.style.animation='none';
-        menubarref.current.style.opacity=1;
+//         menubarref.current.style.animation='none';
+//         menubarref.current.style.opacity=1;
   
-        newsref.current.style.animation='none';
-        newsref.current.style.transform='scale(1)';
+//         newsref.current.style.animation='none';
+//         newsref.current.style.transform='scale(1)';
   
-        videoRef.current.style.display='none';
+//         videoRef.current.style.display='none';
   
-        dateref.current.style.animation='none';
-        dateref.current.style.opacity=1;
-        }
-        else{
-        fmactitleref.current.style.animation='none';
-        fmactitleref.current.style.top='-1%'
-        fmactitleref.current.style.left='50%'
-        fmactitleref.current.style.opacity=1;
-        fmactitleref.current.style.fontSize='45px';
+//         dateref.current.style.animation='none';
+//         dateref.current.style.opacity=1;
+//         }
+//         else{
+//         fmactitleref.current.style.animation='none';
+//         fmactitleref.current.style.top='-1%'
+//         fmactitleref.current.style.left='50%'
+//         fmactitleref.current.style.opacity=1;
+//         fmactitleref.current.style.fontSize='45px';
   
-        disappearingtextref1.current.style.animation='none';
-        disappearingtextref1.current.style.fontSize=0;
-        disappearingtextref2.current.style.animation='none';
-        disappearingtextref2.current.style.fontSize=0;
-        disappearingtextref3.current.style.animation='none';
-        disappearingtextref3.current.style.fontSize=0;
+//         disappearingtextref1.current.style.animation='none';
+//         disappearingtextref1.current.style.fontSize=0;
+//         disappearingtextref2.current.style.animation='none';
+//         disappearingtextref2.current.style.fontSize=0;
+//         disappearingtextref3.current.style.animation='none';
+//         disappearingtextref3.current.style.fontSize=0;
       
   
-        highlighttextref1.current.style.animation='none';
-        highlighttextref1.current.style.color='red';
-        highlighttextref2.current.style.animation='none';
-        highlighttextref2.current.style.color='red';
-        highlighttextref3.current.style.animation='none';
-        highlighttextref3.current.style.color='red';
-        highlighttextref4.current.style.animation='none';
-        highlighttextref4.current.style.color='red';
+//         highlighttextref1.current.style.animation='none';
+//         highlighttextref1.current.style.color='red';
+//         highlighttextref2.current.style.animation='none';
+//         highlighttextref2.current.style.color='red';
+//         highlighttextref3.current.style.animation='none';
+//         highlighttextref3.current.style.color='red';
+//         highlighttextref4.current.style.animation='none';
+//         highlighttextref4.current.style.color='red';
   
-        fmaclogoref.current.style.animation='none';
-        fmaclogoref.current.style.opacity=1;
+//         fmaclogoref.current.style.animation='none';
+//         fmaclogoref.current.style.opacity=1;
   
-        menubarref.current.style.animation='none';
-        menubarref.current.style.opacity=1;
+//         menubarref.current.style.animation='none';
+//         menubarref.current.style.opacity=1;
   
-        newsref.current.style.animation='none';
-        newsref.current.style.transform='scale(1)';
+//         newsref.current.style.animation='none';
+//         newsref.current.style.transform='scale(1)';
   
-        videoRef.current.style.display='none';
+//         videoRef.current.style.display='none';
   
-        dateref.current.style.animation='none';
-        dateref.current.style.opacity=1;
-        }
-      }
-    else{
-    sessionStorage.setItem("loaded","1")
-    }
+//         dateref.current.style.animation='none';
+//         dateref.current.style.opacity=1;
+//         }
+//       }
+//     else{
+//     sessionStorage.setItem("loaded","1")
+//     }
 
-  }
+//   }
 
-  window.addEventListener("resize", adjust);
+//   window.addEventListener("resize", adjust);
 
-  adjust();
+//   adjust();
 
-  // Cleanup function to remove the event listener
-  return () => {
-    window.removeEventListener("resize", adjust);
-  };
-});
+//   // Cleanup function to remove the event listener
+//   return () => {
+//     window.removeEventListener("resize", adjust);
+//   };
+// });
 
  
 
-    useEffect(()=>{
-let t;
-  if(sessionStorage.getItem("loaded")==="1")
-  t=1;
-else
-t=11000;
-   const a= setTimeout(()=>{
-     if(reelref.current)
-     {
-      reelref.current.style.display='none';
-     }
-     if(mainref.current)
-     {
-      mainref.current.style.overflowY = "scroll";
-     }
-    },t)
-    return ()=>clearTimeout(a)  });
-  //functions
+//     useEffect(()=>{
+// let t;
+//   if(sessionStorage.getItem("loaded")==="1")
+//   t=1;
+// else
+// t=11000;
+//    const a= setTimeout(()=>{
+//      if(reelref.current)
+//      {
+//       reelref.current.style.display='none';
+//      }
+//      if(mainref.current)
+//      {
+//       mainref.current.style.overflowY = "scroll";
+//      }
+//     },t)
+//     return ()=>clearTimeout(a)  });
+//   //functions
 
   function handleshiftcontent(index) {
     const newArray = optionsarray.map((_, i) => i === index);
