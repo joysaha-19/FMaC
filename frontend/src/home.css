@@ -539,7 +539,7 @@ p {
       top: 110%;
       white-space: nowrap;
       transform: translate(-50%,0%);
-      animation: reposition 1.5s ease-in-out 2.5s 1 normal forwards ;
+      animation: reposition 1s ease 3s 1 normal forwards ;
       z-index: 5;
       opacity: 1;
     }
@@ -556,12 +556,12 @@ p {
     }
     .hightlighttext {
       color: white;
-      animation: colourchange 1s ease-in-out 1s 1 normal forwards;
+      animation: colourchange 0.7s ease 1s 1 normal forwards;
     }
     
     .disappearingtext {
       color: white;
-      animation: textdisappear 1s ease-in-out 1s 1 normal forwards;
+      animation: textdisappear 1.3s ease 1.7s 1 normal forwards;
     }
     .fmaclogo {
       height: 100px;
@@ -809,7 +809,7 @@ p {
       }
     
       100% {
-        font-size: 1px;
+        font-size: 0px;
         opacity: 0;
       }
     }
