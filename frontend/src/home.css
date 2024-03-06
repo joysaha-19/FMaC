@@ -561,7 +561,7 @@ p {
     
     .disappearingtext {
       color: white;
-      animation: textdisappear 1s ease-in 1s 1 normal forwards;
+      animation: textdisappear 1s ease-in-out 1s 1 normal forwards;
     }
     .fmaclogo {
       height: 100px;
@@ -809,7 +809,7 @@ p {
       }
     
       100% {
-        font-size: 0px;
+        font-size: 1px;
         opacity: 0;
       }
     }
@@ -851,7 +851,7 @@ p {
       100%{
         top: 1%;
         left: 50%;
-        transform: translate(-51.5%,0%) scale(1.8);
+        transform: translate(-51%,0%) scale(1.5);
       }
     }
     
