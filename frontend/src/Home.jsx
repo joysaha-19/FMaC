@@ -238,24 +238,24 @@ export default function Home() {
 
  
 
-//     useEffect(()=>{
-// let t;
-//   if(sessionStorage.getItem("loaded")==="1")
-//   t=1;
-// else
-// t=11000;
-//    const a= setTimeout(()=>{
-//      if(reelref.current)
-//      {
-//       reelref.current.style.display='none';
-//      }
-//      if(mainref.current)
-//      {
-//       mainref.current.style.overflowY = "scroll";
-//      }
-//     },t)
-//     return ()=>clearTimeout(a)  });
-//   //functions
+    useEffect(()=>{
+let t;
+  if(sessionStorage.getItem("loaded")==="1")
+  t=1;
+else
+t=11000;
+   const a= setTimeout(()=>{
+     if(reelref.current)
+     {
+      reelref.current.style.display='none';
+     }
+     if(mainref.current)
+     {
+      mainref.current.style.overflowY = "scroll";
+     }
+    },t)
+    return ()=>clearTimeout(a)  });
+  //functions
 
   function handleshiftcontent(index) {
     const newArray = optionsarray.map((_, i) => i === index);
