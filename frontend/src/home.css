@@ -840,8 +840,7 @@ p {
       0%{
         top: 110%;
         left: 50%;
-        /* transform: translate(-50%,0%) scale(1); */
-        font-size: 23px;
+        transform: translate(-50%,0%) scale(1);
       }
 
       /* 10%{
@@ -852,8 +851,7 @@ p {
       100%{
         top: 1%;
         left: 50%;
-        /* transform: translate(-52%,0%) scale(1.95); */
-        font-size: 45px;
+        transform: translate(-50.5%,0%) scale(1.8);
       }
     }
     
