@@ -88,7 +88,7 @@ export default function Home() {
         }
         else{
         fmactitleref.current.style.animation='none';
-        fmactitleref.current.style.top='-15%'
+        fmactitleref.current.style.top='1%'
         fmactitleref.current.style.left='50%'
         fmactitleref.current.style.opacity=1;
         fmactitleref.current.style.fontSize='45px';
@@ -126,10 +126,7 @@ export default function Home() {
         }
       }
     else{
-     const a=   setTimeout(()=>{
-          sessionStorage.setItem("loaded","1");
-              return ()=>clearTimeout(a)
-        },11000);
+      sessionStorage.setItem("loaded","1")
        
     }
 
@@ -186,7 +183,7 @@ export default function Home() {
         }
         else{
         fmactitleref.current.style.animation='none';
-        fmactitleref.current.style.top='-15%'
+        fmactitleref.current.style.top='-1%'
         fmactitleref.current.style.left='50%'
         fmactitleref.current.style.opacity=1;
         fmactitleref.current.style.fontSize='45px';
@@ -243,7 +240,7 @@ export default function Home() {
 
     useEffect(()=>{
 let t;
-  if(localStorage.getItem("loaded")==="1")
+  if(sessionStorage.getItem("loaded")==="1")
   t=1;
 else
 t=11000;
