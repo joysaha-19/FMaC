@@ -539,7 +539,7 @@ p {
       top: 110%;
       white-space: nowrap;
       transform: translate(-50%,0%);
-      animation: reposition 1.5s ease-out 3.3s 1 normal forwards ;
+      animation: reposition 1.5s ease-out 2.2s 1 normal forwards ;
       z-index: 5;
       opacity: 1;
     }
@@ -556,12 +556,12 @@ p {
     }
     .hightlighttext {
       color: white;
-      animation: colourchange 1s ease 1s 1 normal forwards;
+      animation: colourchange 1s ease-out 1s 1 normal forwards;
     }
     
     .disappearingtext {
       color: white;
-      animation: textdisappear 0.8s ease 2s 1 normal forwards;
+      animation: textdisappear 1s ease-out 1s 1 normal forwards;
     }
     .fmaclogo {
       height: 100px;
@@ -572,7 +572,7 @@ p {
       top: -5%;
       transform: translateX(-50%);
       opacity: 0;
-      animation: logoappear 0.4s ease 5.3s 1 normal forwards;
+      animation: logoappear 0.4s ease 4.3s 1 normal forwards;
     }
     .date{
       position: absolute;
@@ -673,7 +673,7 @@ p {
       grid-auto-rows: minmax(100px, auto);  
       gap: 10px;
       transform: scale(0);
-      animation: newsappear 0.6s ease-out 5.2s 1 normal forwards;
+      animation: newsappear 0.6s ease-out 4.2s 1 normal forwards;
     }
     .loadingscreen{
         grid-column:1/2 ;

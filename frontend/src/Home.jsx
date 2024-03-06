@@ -240,10 +240,14 @@ export default function Home() {
 
     useEffect(()=>{
 let t;
-  if(sessionStorage.getItem("loaded")==="1")
-  t=1;
-else
-t=11000;
+//   if(sessionStorage.getItem("loaded")==="1")
+//   t=1;
+// else
+// t=11000;
+
+if(window.innerWidth>=501)
+t=10000;
+else t=6000;
    const a= setTimeout(()=>{
      if(reelref.current)
      {
