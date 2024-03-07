@@ -21,6 +21,8 @@ export default function Home() {
   const menubarref=useRef(null);
   const newsref=useRef(null);
   const dateref=useRef(null);
+  const parentref=useRef(null);
+
   //states
   const [optionsarray, setoptionsarray] = useState([
     true,
@@ -226,20 +228,315 @@ export default function Home() {
 
 //   }
 
-//   window.addEventListener("resize", adjust);
 
-//   adjust();
 
-//   // Cleanup function to remove the event listener
-//   return () => {
-//     window.removeEventListener("resize", adjust);
-//   };
-// });
+
+  function adjust(){
+   let innerWidth=window.innerWidth;
+   if(innerWidth>=1201)
+   {
+   fmactitleref.current.style.animation='none';
+   fmactitleref.current.style.top='-30%'
+   fmactitleref.current.style.left='50%'
+   fmactitleref.current.style.opacity=1;
+   fmactitleref.current.style.fontSize='75px';
+
+   disappearingtextref1.current.style.animation='none';
+   disappearingtextref1.current.style.fontSize=0;
+   disappearingtextref2.current.style.animation='none';
+   disappearingtextref2.current.style.fontSize=0;
+   disappearingtextref3.current.style.animation='none';
+   disappearingtextref3.current.style.fontSize=0;
+ 
+
+   highlighttextref1.current.style.animation='none';
+   highlighttextref1.current.style.color='red';
+   highlighttextref2.current.style.animation='none';
+   highlighttextref2.current.style.color='red';
+   highlighttextref3.current.style.animation='none';
+   highlighttextref3.current.style.color='red';
+   highlighttextref4.current.style.animation='none';
+   highlighttextref4.current.style.color='red';
+
+   fmaclogoref.current.style.animation='none';
+   fmaclogoref.current.style.opacity=1;
+
+   menubarref.current.style.animation='none';
+   menubarref.current.style.opacity=1;
+
+   newsref.current.style.animation='none';
+   newsref.current.style.transform='scale(1)';
+
+   videoRef.current.style.display='none';
+
+   dateref.current.style.animation='none';
+   dateref.current.style.opacity=1;
+   }
+        else if(innerWidth>=1001&&innerWidth<=1201)
+        {
+        fmactitleref.current.style.animation='none';
+        fmactitleref.current.style.top='-25%'
+        fmactitleref.current.style.left='50%'
+        fmactitleref.current.style.opacity=1;
+        fmactitleref.current.style.fontSize='75px';
+  
+        disappearingtextref1.current.style.animation='none';
+        disappearingtextref1.current.style.fontSize=0;
+        disappearingtextref2.current.style.animation='none';
+        disappearingtextref2.current.style.fontSize=0;
+        disappearingtextref3.current.style.animation='none';
+        disappearingtextref3.current.style.fontSize=0;
+      
+  
+        highlighttextref1.current.style.animation='none';
+        highlighttextref1.current.style.color='red';
+        highlighttextref2.current.style.animation='none';
+        highlighttextref2.current.style.color='red';
+        highlighttextref3.current.style.animation='none';
+        highlighttextref3.current.style.color='red';
+        highlighttextref4.current.style.animation='none';
+        highlighttextref4.current.style.color='red';
+  
+        fmaclogoref.current.style.animation='none';
+        fmaclogoref.current.style.opacity=1;
+  
+        menubarref.current.style.animation='none';
+        menubarref.current.style.opacity=1;
+  
+        newsref.current.style.animation='none';
+        newsref.current.style.transform='scale(1)';
+  
+        videoRef.current.style.display='none';
+  
+        dateref.current.style.animation='none';
+        dateref.current.style.opacity=1;
+        }
+        else if (innerWidth>=970&&innerWidth<=1001){
+        fmactitleref.current.style.animation='none';
+        fmactitleref.current.style.top='-15%'
+        fmactitleref.current.style.left='50%'
+        fmactitleref.current.style.opacity=1;
+        fmactitleref.current.style.fontSize='60px';
+  
+        disappearingtextref1.current.style.animation='none';
+        disappearingtextref1.current.style.fontSize=0;
+        disappearingtextref2.current.style.animation='none';
+        disappearingtextref2.current.style.fontSize=0;
+        disappearingtextref3.current.style.animation='none';
+        disappearingtextref3.current.style.fontSize=0;
+      
+  
+        highlighttextref1.current.style.animation='none';
+        highlighttextref1.current.style.color='red';
+        highlighttextref2.current.style.animation='none';
+        highlighttextref2.current.style.color='red';
+        highlighttextref3.current.style.animation='none';
+        highlighttextref3.current.style.color='red';
+        highlighttextref4.current.style.animation='none';
+        highlighttextref4.current.style.color='red';
+  
+        fmaclogoref.current.style.animation='none';
+        fmaclogoref.current.style.opacity=1;
+  
+        menubarref.current.style.animation='none';
+        menubarref.current.style.opacity=1;
+  
+        newsref.current.style.animation='none';
+        newsref.current.style.transform='scale(1)';
+  
+        videoRef.current.style.display='none';
+  
+        dateref.current.style.animation='none';
+        dateref.current.style.opacity=1;
+        }
+
+
+
+        else if (innerWidth>=800&&innerWidth<=970){
+          fmactitleref.current.style.animation='none';
+          fmactitleref.current.style.top='-15%'
+          fmactitleref.current.style.left='50%'
+          fmactitleref.current.style.opacity=1;
+          fmactitleref.current.style.fontSize='50px';
+    
+          disappearingtextref1.current.style.animation='none';
+          disappearingtextref1.current.style.fontSize=0;
+          disappearingtextref2.current.style.animation='none';
+          disappearingtextref2.current.style.fontSize=0;
+          disappearingtextref3.current.style.animation='none';
+          disappearingtextref3.current.style.fontSize=0;
+        
+    
+          highlighttextref1.current.style.animation='none';
+          highlighttextref1.current.style.color='red';
+          highlighttextref2.current.style.animation='none';
+          highlighttextref2.current.style.color='red';
+          highlighttextref3.current.style.animation='none';
+          highlighttextref3.current.style.color='red';
+          highlighttextref4.current.style.animation='none';
+          highlighttextref4.current.style.color='red';
+    
+          fmaclogoref.current.style.display='none';
+          // fmaclogoref.current.style.opacity=1;
+    
+          menubarref.current.style.animation='none';
+          menubarref.current.style.opacity=1;
+    
+          newsref.current.style.animation='none';
+          newsref.current.style.transform='scale(1)';
+    
+          videoRef.current.style.display='none';
+    
+          dateref.current.style.animation='none';
+          dateref.current.style.opacity=1;
+          }
+
+
+
+          else if (innerWidth>=651&&innerWidth<=800){
+            fmactitleref.current.style.animation='none';
+            fmactitleref.current.style.top='-15%'
+            fmactitleref.current.style.left='50%'
+            fmactitleref.current.style.opacity=1;
+            fmactitleref.current.style.fontSize='50px';
+      
+            disappearingtextref1.current.style.animation='none';
+            disappearingtextref1.current.style.fontSize=0;
+            disappearingtextref2.current.style.animation='none';
+            disappearingtextref2.current.style.fontSize=0;
+            disappearingtextref3.current.style.animation='none';
+            disappearingtextref3.current.style.fontSize=0;
+          
+      
+            highlighttextref1.current.style.animation='none';
+            highlighttextref1.current.style.color='red';
+            highlighttextref2.current.style.animation='none';
+            highlighttextref2.current.style.color='red';
+            highlighttextref3.current.style.animation='none';
+            highlighttextref3.current.style.color='red';
+            highlighttextref4.current.style.animation='none';
+            highlighttextref4.current.style.color='red';
+      
+            fmaclogoref.current.style.display='none';
+            // fmaclogoref.current.style.opacity=1;
+      
+            menubarref.current.style.animation='none';
+            menubarref.current.style.opacity=1;
+      
+            newsref.current.style.animation='none';
+            newsref.current.style.transform='scale(1)';
+      
+            videoRef.current.style.display='none';
+      
+            dateref.current.style.animation='none';
+            dateref.current.style.opacity=1;
+            }
+
+              else if (innerWidth>=551&&innerWidth<651){
+                fmactitleref.current.style.fontSize='35px';
+                fmactitleref.current.style.animation='none';
+                fmactitleref.current.style.top='30%'
+                fmactitleref.current.style.left='50%'
+                fmactitleref.current.style.opacity=1;
+                fmactitleref.current.style.transform= 'translate(-52%,0%) scale(1.8)';
+          
+                disappearingtextref1.current.style.animation='none';
+                disappearingtextref1.current.style.fontSize=0.1;
+                disappearingtextref1.current.style.transform='translate(-50%,0%) scale(0)'
+                disappearingtextref1.current.style.opacity=0;
+                disappearingtextref2.current.style.animation='none';
+                disappearingtextref2.current.style.fontSize=0.1;
+                disappearingtextref2.current.style.opacity=0;
+                disappearingtextref2.current.style.transform='translate(-50%,0%) scale(0)'
+                disappearingtextref3.current.style.animation='none';
+                disappearingtextref3.current.style.fontSize=0.1;
+                disappearingtextref3.current.style.opacity=0;
+                disappearingtextref3.current.style.transform='translate(-50%,0%) scale(0)'
+
+              
+          
+                highlighttextref1.current.style.animation='none';
+                highlighttextref1.current.style.color='red';
+                highlighttextref2.current.style.animation='none';
+                highlighttextref2.current.style.color='red';
+                highlighttextref3.current.style.animation='none';
+                highlighttextref3.current.style.color='red';
+                highlighttextref4.current.style.animation='none';
+                highlighttextref4.current.style.color='red';
+          
+                fmaclogoref.current.style.animation='none';
+                fmaclogoref.current.style.left='50%';
+                fmaclogoref.current.style.top='-5%';
+                fmaclogoref.current.style.transform='translateX(-50%)';
+                fmaclogoref.current.style.opacity=1;
+                // fmaclogoref.current.style.opacity=1;
+          
+                menubarref.current.style.animation='none';
+                menubarref.current.style.opacity=1;
+          
+                newsref.current.style.animation='none';
+                newsref.current.style.transform='scale(1)';
+          
+                videoRef.current.style.display='none';
+          
+                dateref.current.style.animation='none';
+                dateref.current.style.opacity=1;
+                }
+              else if (innerWidth<=550){
+              fmactitleref.current.style.animation='none';
+              fmactitleref.current.style.top='40%'
+              fmactitleref.current.style.left='50%'
+              fmactitleref.current.style.opacity=1;
+              fmactitleref.current.style.fontSize='23px';
+              fmactitleref.current.style.transform= 'translate(-52%,0%) scale(1.8)';
+          
+              disappearingtextref1.current.style.animation='none';
+              disappearingtextref1.current.style.fontSize=0.1;
+              disappearingtextref1.current.style.opacity=0;
+              disappearingtextref2.current.style.animation='none';
+              disappearingtextref2.current.style.fontSize=0.1;
+              disappearingtextref2.current.style.opacity=0;
+              disappearingtextref3.current.style.animation='none';
+              disappearingtextref3.current.style.fontSize=0.1;
+              disappearingtextref3.current.style.opacity=0;
+          
+                highlighttextref1.current.style.animation='none';
+                highlighttextref1.current.style.color='red';
+                highlighttextref2.current.style.animation='none';
+                highlighttextref2.current.style.color='red';
+                highlighttextref3.current.style.animation='none';
+                highlighttextref3.current.style.color='red';
+                highlighttextref4.current.style.animation='none';
+                highlighttextref4.current.style.color='red';
+          
+                fmaclogoref.current.style.animation='none';
+                fmaclogoref.current.style.left='50%';
+                fmaclogoref.current.style.top='-5%';
+                fmaclogoref.current.style.transform='translateX(-50%)';
+                fmaclogoref.current.style.opacity=1;
+          
+                menubarref.current.style.animation='none';
+                menubarref.current.style.opacity=1;
+          
+                newsref.current.style.animation='none';
+                newsref.current.style.transform='scale(1)';
+          
+                videoRef.current.style.display='none';
+          
+                dateref.current.style.animation='none';
+                dateref.current.style.opacity=1;
+                }
+      }
+   
+
+  
+
+
 
 useEffect(() => {
   let t;
 
-  if (window.innerWidth >= 501) {
+  if (window.innerWidth >=650) {
     t = 10000; // 10 seconds for wider screens
   } else {
     t = 6000; // 6 seconds for narrower screens
@@ -258,6 +555,18 @@ useEffect(() => {
 }, []); // Empty dependency array means this effect runs only once on mount
 
   //functions
+
+
+  useEffect(()=>{
+    window.addEventListener("resize", adjust);
+  
+  
+    // Cleanup function to remove the event listener
+    return () => {
+      window.removeEventListener("resize", adjust);
+    };
+  })
+   
 
   function handleshiftcontent(index) {
     const newArray = optionsarray.map((_, i) => i === index);
