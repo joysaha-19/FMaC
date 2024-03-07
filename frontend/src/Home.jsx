@@ -339,7 +339,7 @@ useEffect(() => {
         <div className="news" ref={newsref}>
           {!loading ? (
             <>
-              <div className="news1" onClick={()=>{handleshiftcontent(1)}}>
+              <div className="news1">
                 <div className="newsbox">
                   <img
                     src="./pics/newsphotos/rakshasa.webp"

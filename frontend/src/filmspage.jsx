@@ -282,9 +282,9 @@ function handleclosedescription(){
           })}
         </div>
       </div>
-      <div className="filmsarea">
+      <main className="filmsarea">
     
-        <div className="filmmenusparent">
+        <section className="filmmenusparent">
           <div className="filmmenuscontainer" ref={menubarref}>
             <div
               className="filmmenuoption"
@@ -337,7 +337,7 @@ function handleclosedescription(){
             style={{ transform: `translateX(${dist}px)` }}
             ref={selectorref}
           ></div>
-        </div>
+        </section>
         <div className="searcharea">
           <div className="searchbar">
             <img
@@ -356,42 +356,34 @@ function handleclosedescription(){
           </div>
         </div>
         
-        <div className="homecontent">
-          
-            {
-              menuarr.map((value,index)=>{
-                    return (<>
-                       <div className="block" key={index}>
-            <div className="heading">
-              <p>{value}</p>
-            </div>
-            <div className="listbox">
-            <div className="offset"></div>
-            {
-              
-              listindex[index].map((value1,index1)=>{
-                     return(
-                      <div className="listelement" onClick={(e)=>showFilmInfo(index,index1)} key={index1} >
-                        <img className="listelimage" src={value1["image"]} alt="listimage" loading="lazy"></img>
-                        <div className="infobar">
-                       <img className="infobutton" alt="info" src="./pics/utils/info.webp" loading="lazy"></img>
-                       </div>
-                       <div className="listlogo">
-                        <img src={value1["logo"]} alt="listmovielogo" loading="lazy"></img>
-                       </div>
-                      </div>
-                     )
-              })
-            }
-            <div className="offset"></div>
-          </div>
-          </div>
-                    </>)
-              })
-            }
-          
+        <ul className="homecontent">
+  {menuarr.map((value, index) => (
+    <li key={`menu-item-${index}`}> {/* key should be here */}
+      <div className="block">
+        <div className="heading">
+          <h3>{value}</h3>
         </div>
+        <ul className="listbox">
+          <li className="offset"></li> {/* Make sure .offset has styles in CSS */}
+          {listindex[index].map((value1, index1) => (
+            <li className="listelement" key={`list-item-${index1}`} onClick={(e) => showFilmInfo(index, index1)}>
+              <img className="listelimage" src={value1["image"]} alt="listimage" loading="lazy"></img>
+              <div className="infobar">
+                <img className="infobutton" alt="info" src="./pics/utils/info.webp" loading="lazy"></img>
+              </div>
+              <div className="listlogo">
+                <img src={value1["logo"]} alt="listmovielogo" loading="lazy"></img>
+              </div>
+            </li>
+          ))}
+          <li className="offset"></li> {/* Make sure .offset has styles in CSS */}
+        </ul>
       </div>
+    </li>
+  ))}
+</ul>
+
+      </main>
     </div>
     
     </div>
