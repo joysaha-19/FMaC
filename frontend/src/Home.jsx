@@ -21,7 +21,7 @@ export default function Home() {
   const menubarref=useRef(null);
   const newsref=useRef(null);
   const dateref=useRef(null);
-  const parentref=useRef(null);
+  // const parentref=useRef(null);
 
   //states
   const [optionsarray, setoptionsarray] = useState([
