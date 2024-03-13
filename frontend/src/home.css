@@ -1443,7 +1443,7 @@ p {
   }
   
   .fmactitle  {
-    font-size: 50px;
+    font-size: 60px;
     /* font-family: 'Diphylleia', serif; */
     /* font-family: 'Permanent Marker', cursive; */
     font-family: "Protest Riot", sans-serif;
@@ -1804,7 +1804,7 @@ p {
   
   @keyframes titletextappear{
     0%{
-      transform: translate(-50%,0%)scale(0.8);
+      transform: translate(-50%,0%)scale(1);
       opacity: 0;
     }
   
